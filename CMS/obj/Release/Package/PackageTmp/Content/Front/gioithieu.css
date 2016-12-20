@@ -1,0 +1,402 @@
+/*Trang giới thiệu*/
+.gioithieu {
+    background: rgb(255, 255, 255);
+}
+
+    /*Bài viết*/
+    .gioithieu > .baiviet {
+    }
+
+        /*Ảnh trong bài*/
+        .gioithieu > .baiviet > img {
+            margin: 0.5em auto;
+            margin-top: 0;
+        }
+
+        /*Phần nội dung*/
+        .gioithieu > .baiviet > .content {
+            margin: 0;
+            padding: 0.5em 0;
+            text-indent: 1.5em;
+            line-height: 1.7em;
+            text-align: justify;
+        }
+
+        .gioithieu > .baiviet > ul {
+            line-height: 1.7em;
+            padding: 0.5em 3em;
+        }
+
+            .gioithieu > .baiviet > ul > li {
+            }
+
+        /*Thông tin công ty*/
+        .gioithieu > .baiviet > .info {
+            line-height: 1.7em;
+        }
+
+            .gioithieu > .baiviet > .info .bold {
+                font-weight: bold;
+            }
+
+            .gioithieu > .baiviet > .info .uppercase {
+                text-transform: uppercase;
+            }
+
+            .gioithieu > .baiviet > .info .red {
+                color: rgb(255, 0, 0);
+            }
+
+    /*Tìm vé máy bay - tin khuyến mại*/
+    .gioithieu > aside {
+        padding: 0 0 0 1em;
+    }
+
+        /*Tìm vé máy bay*/
+        .gioithieu > aside > .timchuyenbay {
+            background: rgb(61, 90, 254);
+            padding: 2em 2em;
+        }
+
+            /*Tiêu đề*/
+            .gioithieu > aside > .timchuyenbay > .title {
+                text-align: center;
+                border-bottom: dotted 1px rgb(255, 255, 255);
+            }
+
+                .gioithieu > aside > .timchuyenbay > .title > img {
+                    padding: 0.3em 0 0 0.5em;
+                }
+
+                .gioithieu > aside > .timchuyenbay > .title > p {
+                    font-size: 1.5em;
+                    color: rgb(255, 255, 255);
+                    text-transform: uppercase;
+                }
+
+            /*Thông tin tìm kiếm*/
+            .gioithieu > aside > .timchuyenbay > .info {
+                color: rgb(255, 255, 255);
+            }
+
+                /*Nút chọn loại vé*/
+                .gioithieu > aside > .timchuyenbay > .info > .loaive {
+                    padding: 1em 0 0 0;
+                    height: 1%;
+                    overflow: hidden;
+                }
+
+                    .gioithieu > aside > .timchuyenbay > .info > .loaive > input {
+                        margin: 0.2em 0.5em 0 0;
+                    }
+
+                    .gioithieu > aside > .timchuyenbay > .info > .loaive > p {
+                        margin: 0 1em 0 0;
+                    }
+
+                /*Ô nhập địa điểm*/
+                .gioithieu > aside > .timchuyenbay > .info > .diadiem {
+                    padding: 1em 1em 0 1em;
+                }
+
+                    .gioithieu > aside > .timchuyenbay > .info > .diadiem > div {
+                        padding: 0 0 0.5em;
+                    }
+
+                        .gioithieu > aside > .timchuyenbay > .info > .diadiem > div > p {
+                            background: rgb(216, 216, 216);
+                            color: rgb(0, 0, 0);
+                            display: inline-block;
+                            width: 25%;
+                            height: 2.5em;
+                            padding: 0.5em 0.65em;
+                            margin: 0;
+                        }
+
+                        .gioithieu > aside > .timchuyenbay > .info > .diadiem > div > input {
+                            width: 75%;
+                            height: 2.5em;
+                            border-radius: 0 !important;
+                        }
+
+                /*Ô chọn thời gian*/
+                .gioithieu > aside > .timchuyenbay > .info > .thoigian {
+                    height: 1%;
+                    overflow: hidden;
+                    padding: 1em 0 0 0;
+                }
+
+                    .gioithieu > aside > .timchuyenbay > .info > .thoigian > div {
+                        padding: 0 0.5em 0 0;
+                        ;
+                    }
+
+                    .gioithieu > aside > .timchuyenbay > .info > .thoigian > .ngayve {
+                        padding: 0;
+                    }
+
+                    .gioithieu > aside > .timchuyenbay > .info > .thoigian > div > p {
+                        background: rgb(216, 216, 216);
+                        color: rgb(0, 0, 0);
+                        display: inline-block;
+                        width: 40%;
+                        height: 2.5em;
+                        padding: 0.5em 0.3em;
+                        margin: 0;
+                    }
+
+                    .gioithieu > aside > .timchuyenbay > .info > .thoigian > div > select {
+                        width: 60%;
+                        height: 2.5em;
+                        border-radius: 0 !important;
+                        padding: 0;
+                    }
+
+                        .gioithieu > aside > .timchuyenbay > .info > .thoigian > div > select > option {
+                        }
+
+                /*Ô chọn số lượng vé*/
+                .gioithieu > aside > .timchuyenbay > .info > .soluong {
+                    height: 1%;
+                    overflow: hidden;
+                    padding: 1em 0 0 0;
+                }
+
+                    .gioithieu > aside > .timchuyenbay > .info > .soluong > div {
+                        padding: 0;
+                    }
+
+                        .gioithieu > aside > .timchuyenbay > .info > .soluong > div > p {
+                        }
+
+                        .gioithieu > aside > .timchuyenbay > .info > .soluong > div > select {
+                            width: 80%;
+                        }
+
+                            .gioithieu > aside > .timchuyenbay > .info > .soluong > div > select > option {
+                            }
+
+                    /*Ôc họn số lượng cho trẻ em*/
+                    .gioithieu > aside > .timchuyenbay > .info > .soluong > .treem {
+                    }
+
+                        .gioithieu > aside > .timchuyenbay > .info > .soluong > .treem > p {
+                            padding: 0 0 0 0.7em;
+                        }
+
+                        .gioithieu > aside > .timchuyenbay > .info > .soluong > .treem > select {
+                            margin: 0 0.8em;
+                        }
+
+                    /*Ôc họn số lượng cho em bé*/
+                    .gioithieu > aside > .timchuyenbay > .info > .soluong > .embe {
+                    }
+
+                        .gioithieu > aside > .timchuyenbay > .info > .soluong > .embe > p {
+                            padding: 0 0 0 1.45em;
+                        }
+
+                        .gioithieu > aside > .timchuyenbay > .info > .soluong > .embe > select {
+                            float: right;
+                        }
+
+                /*Nút tìm vé*/
+                .gioithieu > aside > .timchuyenbay > .info > button {
+                    background: rgb(255, 153, 51);
+                    border: none;
+                    padding: 1em 1em;
+                    margin: 1em 0 0 0;
+                    width: 100%;
+                }
+
+                    .gioithieu > aside > .timchuyenbay > .info > button > img {
+                    }
+
+                    .gioithieu > aside > .timchuyenbay > .info > button > p {
+                        font-size: 1.5em;
+                        color: rgb(255, 255, 255);
+                        text-transform: uppercase;
+                        padding: 0.15em 0 0 0;
+                        margin: 0;
+                    }
+
+        /*Tin khuyến mại*/
+        .gioithieu > aside > .khuyenmai {
+            padding: 2em 0 0 0;
+        }
+
+            /*Tiêu đề*/
+            .gioithieu > aside > .khuyenmai > .title {
+                font-size: 2em;
+                color: rgb(61, 90, 254);
+                text-transform: uppercase;
+                font-weight: bold;
+                padding: 0;
+            }
+
+            /*Các bài viết*/
+            .gioithieu > aside > .khuyenmai > .content {
+                padding: 0;
+            }
+
+                /*Từng bài viết*/
+                .gioithieu > aside > .khuyenmai > .content > div {
+                    padding: 0;
+                    border-top: dotted 1px rgb(0, 0, 0);
+                    padding: 0.5em 0 1em 0;
+                }
+
+                    .gioithieu > aside > .khuyenmai > .content > div > .title {
+                        font-size: 1.1em;
+                        font-weight: bold;
+                        color: rgb(140, 158, 255);
+                        text-decoration: none;
+                        transition: all .2s ease-in-out;
+                    }
+
+                        .gioithieu > aside > .khuyenmai > .content > div > .title:hover {
+                            color: rgb(48, 79, 254);
+                        }
+
+                    .gioithieu > aside > .khuyenmai > .content > div > .detail {
+                        padding: 1em 0 0 0;
+                        height: 1%;
+                        overflow: hidden;
+                    }
+
+                        .gioithieu > aside > .khuyenmai > .content > div > .detail > img {
+                        }
+
+                        .gioithieu > aside > .khuyenmai > .content > div > .detail > p {
+                            text-align: justify;
+                            padding: 0 0 0 9em;
+                        }
+
+/*Giao diện cho màn hình lớn*/
+@media (min-width: 1400px) {
+}
+
+/*Giao diện cho tablet (ngang)*/
+@media (min-width: 992px) and (max-width: 1024px) {
+}
+
+/*Giao diện cho tablet (dọc)*/
+@media (min-width: 768px) and (max-width: 991px) {
+    /*Tìm vé máy bay - tin khuyến mại*/
+    .gioithieu > aside {
+        padding: 2.5em 1em 0 1em;
+    }
+
+        /*Tiêu đề*/
+        .gioithieu > aside > .timchuyenbay > .title {
+            font-size: 2em;
+            padding: 0 3.5em 0 0;
+        }
+
+            .gioithieu > aside > .timchuyenbay > .title > img {
+                padding: 0.5em 0 0 0em;
+                width: 3em;
+            }
+
+        /*Tiêu đề*/
+        .gioithieu > aside > .khuyenmai > .title {
+            border-bottom: dotted 1px rgb(0, 0, 0);
+            margin: 0;
+            padding: 0 0 0.5em 0;
+        }
+
+        /*Các bài viết*/
+        .gioithieu > aside > .khuyenmai > .content {
+            height: 1%;
+            overflow: hidden;
+        }
+
+            /*Từng bài viết*/
+            .gioithieu > aside > .khuyenmai > .content > div {
+                padding: 1em 1em 1em 0;
+                border: none;
+            }
+}
+
+/*Giao diện cho điện thoại*/
+@media (max-width: 767px) {
+    .gioithieu {
+        padding: 3em 1em 0 1em;
+    }
+
+        .gioithieu > .baiviet {
+            padding: 0 0 2em 0;
+        }
+
+        /*Tìm vé máy bay - tin khuyến mại*/
+        .gioithieu > aside {
+            padding: 0;
+        }
+
+            /*Tiêu đề*/
+            .gioithieu > aside > .timchuyenbay > .title > p {
+                font-size: 1.1em;
+            }
+
+            .gioithieu > aside > .timchuyenbay > .info > .loaive > p {
+            }
+
+            /*Ô nhập địa điểm*/
+            .gioithieu > aside > .timchuyenbay > .info > .diadiem > div > p {
+                width: 30%;
+            }
+
+            .gioithieu > aside > .timchuyenbay > .info > .diadiem > div > input {
+                width: 70%;
+            }
+
+            /*Ô chọn thời gian*/
+            .gioithieu > aside > .timchuyenbay > .info > .thoigian > div {
+                padding: 0 0 0.5em 0;
+            }
+
+                .gioithieu > aside > .timchuyenbay > .info > .thoigian > div > p {
+                    width: 30%;
+                }
+
+                .gioithieu > aside > .timchuyenbay > .info > .thoigian > div > select {
+                    width: 70%;
+                }
+
+            .gioithieu > aside > .timchuyenbay > .info > .soluong > div {
+                padding: 0 0 0.5em 0;
+            }
+
+                .gioithieu > aside > .timchuyenbay > .info > .soluong > div > p {
+                    margin: 0;
+                }
+
+                .gioithieu > aside > .timchuyenbay > .info > .soluong > div > select {
+                    width: 100%;
+                }
+
+            .gioithieu > aside > .timchuyenbay > .info > .soluong > .treem > p {
+                padding: 0;
+            }
+
+            .gioithieu > aside > .timchuyenbay > .info > .soluong > .treem > select {
+                margin: 0;
+            }
+
+            .gioithieu > aside > .timchuyenbay > .info > .soluong > .embe > p {
+                padding: 0;
+            }
+
+            .gioithieu > aside > .timchuyenbay > .info > button > p {
+                font-size: 1.2em;
+                padding: 0.4em 0 0 2em;
+            }
+
+            .gioithieu > aside > .khuyenmai > .content > div > .title {
+                font-size: 1em;
+            }
+
+                .gioithieu > aside > .khuyenmai > .content > div > .title:hover {
+                    color: rgb(48, 79, 254);
+                }
+}

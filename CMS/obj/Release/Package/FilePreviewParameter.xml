@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="Default Web Site/Skyline" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\Project\\KNT\\Skyline\\CMS\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^D:\\Project\\KNT\\Skyline\\CMS\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="CMS-Web.config Connection String" description="" value="data source=DELL\SQL2008;initial catalog=Skyline;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\Project\\KNT\\Skyline\\CMS\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='CMS']/@connectionString" />
+  </parameter>
+  <parameter name="SkylineEntities-Web.config Connection String" description="" value="metadata=res://*/Models.Skyline.csdl|res://*/Models.Skyline.ssdl|res://*/Models.Skyline.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=DELL\SQL2008;initial catalog=Skyline;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\Project\\KNT\\Skyline\\CMS\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='SkylineEntities']/@connectionString" />
+  </parameter>
+</parameters>

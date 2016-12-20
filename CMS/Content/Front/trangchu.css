@@ -1,0 +1,1035 @@
+
+/*CSS cho trang chủ*/
+.trangchu {
+    background: rgb(255, 255, 255);
+    padding: 0 0.5em;
+}
+
+    /*Phần đặt vé - banner - vé khuyến mãi*/
+    .trangchu > .datve-banner-khuyenmai {
+        padding: 0;
+        height: 1%;
+        overflow: hidden;
+    }
+
+        /*Đặt vé*/
+        .trangchu > .datve-banner-khuyenmai > .datve {
+            padding: 0;
+            /*background: url(../Front/images/trangchu/datve-bg.png) no-repeat;*/
+            background-size: 100%;
+            height: 20em;
+        }
+
+            /*Thanh tabs*/
+            .trangchu > .datve-banner-khuyenmai > .datve > .tabs {
+                height: 1%;
+                overflow: hidden;
+                padding: 0;
+            }
+
+                /*Vé máy bay*/
+                .trangchu > .datve-banner-khuyenmai > .datve > .tabs > .airfare {
+                    background: rgb(21,101,192);
+                    background-size: 100%;
+                    z-index: 20;
+                    height: 4.3em;
+                    padding: 1em 1em;
+                    float: left;
+                    width: 55%;
+                    position: absolute;
+                }
+
+                    .trangchu > .datve-banner-khuyenmai > .datve > .tabs > .airfare > img {
+                    }
+
+                    .trangchu > .datve-banner-khuyenmai > .datve > .tabs > .airfare > p {
+                        font-size: 1.8em;
+                        color: rgb(255, 255, 255);
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        text-shadow: rgb(1, 17, 35) 1px 1px;
+                        line-height: 1.5em;
+                        text-align: center;
+                    }
+
+                        .trangchu > .datve-banner-khuyenmai > .datve > .tabs > .airfare > p > i {
+                            padding: 0 0.5em 0 0;
+                        }
+
+                /*Khách sạn*/
+                .trangchu > .datve-banner-khuyenmai > .datve > .tabs > .hotel {
+                    float: right;
+                    background: rgb(25,118,210);
+                    background-size: 100%;
+                    width: 45%;
+                    height: 4em;
+                    margin: 0.3em 0.3em 0 0;
+                }
+
+                    .trangchu > .datve-banner-khuyenmai > .datve > .tabs > .hotel > img {
+                    }
+
+                    .trangchu > .datve-banner-khuyenmai > .datve > .tabs > .hotel > p {
+                        font-size: 1.4em;
+                        color: rgb(255, 255, 255);
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        text-shadow: rgb(1, 17, 35) 1px 1px;
+                        line-height: 3em;
+                        text-align: center;
+                        padding: 0;
+                    }
+
+                        .trangchu > .datve-banner-khuyenmai > .datve > .tabs > .hotel > p > i {
+                            padding: 0 0.5em 0 0;
+                        }
+
+            /*Khung thông tin vé*/
+            .trangchu > .datve-banner-khuyenmai > .datve > .detail {
+                background: rgb(21,101,192);
+            }
+
+                /*Thông tin vé*/
+                .trangchu > .datve-banner-khuyenmai > .datve > .detail > .books-info {
+                    border-bottom: dotted 1px rgb(255, 255, 255);
+                    margin: -4px 0 0 0;
+                    padding: 0;
+                }
+
+                    /*Điểm đến - điểm đi*/
+                    .trangchu > .datve-banner-khuyenmai > .datve > .detail > .books-info > .info {
+                        padding: 1.5em 0 0 0;
+                    }
+
+                        /*Địa điểm*/
+                        .trangchu > .datve-banner-khuyenmai > .datve > .detail > .books-info > .info > .point {
+                            padding: 0;
+                            height: 1%;
+                            overflow: hidden;
+                        }
+
+                            /*Tiêu đề*/
+                            .trangchu > .datve-banner-khuyenmai > .datve > .detail > .books-info > .info > .point > .title {
+                                height: 1%;
+                                overflow: hidden;
+                                padding: 0;
+                            }
+
+                                .trangchu > .datve-banner-khuyenmai > .datve > .detail > .books-info > .info > .point > .title > p {
+                                    font-size: 1.1em;
+                                    font-weight: bold;
+                                    color: rgb(255, 255, 255);
+                                    margin-bottom: 0;
+                                    padding: 0 0 0.3em 0;
+                                }
+
+                                .trangchu > .datve-banner-khuyenmai > .datve > .detail > .books-info > .info > .point > .title > img {
+                                    margin-right: 1em;
+                                }
+
+                            .trangchu > .datve-banner-khuyenmai > .datve > .detail > .books-info > .info > .point > .title-2 {
+                                padding: 0 0 0 5%;
+                            }
+
+                                .trangchu > .datve-banner-khuyenmai > .datve > .detail > .books-info > .info > .point > .title-2 > img {
+                                    margin-right: 0;
+                                }
+
+                            /*Ô chọn địa điểm*/
+                            .trangchu > .datve-banner-khuyenmai > .datve > .detail > .books-info > .info > .point > input {
+                                width: 95%;
+                            }
+
+                        /*Thời gian*/
+                        .trangchu > .datve-banner-khuyenmai > .datve > .detail > .books-info > .info > .dates {
+                            padding: 1em 0 0 0;
+                        }
+
+                        .trangchu > .datve-banner-khuyenmai > .datve > .detail > .books-info > .info > .dates-2 {
+                            padding-left: 5%;
+                        }
+
+                        /*Tiêu đề*/
+                        .trangchu > .datve-banner-khuyenmai > .datve > .detail > .books-info > .info > .dates > p {
+                            font-size: 1.1em;
+                            font-weight: bold;
+                            color: rgb(255, 255, 255);
+                            margin-bottom: 0;
+                            padding: 0 0 0.3em 0;
+                        }
+
+                        .trangchu > .datve-banner-khuyenmai > .datve > .detail > .books-info > .info > .dates > .choose {
+                            display: inline-flex;
+                            padding: 0;
+                        }
+
+                            /*Ô chọn ngày*/
+                            .trangchu > .datve-banner-khuyenmai > .datve > .detail > .books-info > .info > .dates > .choose > .date {
+                                width: 4em;
+                                height: 2em;
+                                padding: 0;
+                                margin: 0;
+                            }
+
+                                .trangchu > .datve-banner-khuyenmai > .datve > .detail > .books-info > .info > .dates > .choose > .date > option {
+                                }
+
+                            /*Ô chọn tháng*/
+                            .trangchu > .datve-banner-khuyenmai > .datve > .detail > .books-info > .info > .dates > .choose > .month {
+                                width: 11em;
+                                height: 2em;
+                                padding: 0;
+                                margin: 0 0 0 0.5em;
+                            }
+
+                                .trangchu > .datve-banner-khuyenmai > .datve > .detail > .books-info > .info > .dates > .choose > .month > option {
+                                }
+
+                            .trangchu > .datve-banner-khuyenmai > .datve > .detail > .books-info > .info > .dates > .choose > i {
+                                color: rgb(255, 255, 255);
+                                font-size: 2em;
+                                cursor: pointer;
+                                padding: 0 0 0 0.2em;
+                            }
+
+                        /*Lịch âm*/
+                        .trangchu > .datve-banner-khuyenmai > .datve > .detail > .books-info > .info > .amlich {
+                            padding: 1em 0 0 0;
+                            color: rgb(250, 150, 0);
+                        }
+
+                /*Số lượng người đi*/
+                .trangchu > .datve-banner-khuyenmai > .datve > .detail > .number {
+                    padding: 0.5em 1em;
+                    border-bottom: dotted 1px rgb(255, 255, 255);
+                }
+
+                    /*Loại vé*/
+                    .trangchu > .datve-banner-khuyenmai > .datve > .detail > .number > .loaive {
+                        padding: 0.5em 0;
+                    }
+
+                        /*Độ tuổi*/
+                        .trangchu > .datve-banner-khuyenmai > .datve > .detail > .number > .loaive > .loainguoi {
+                            width: 6em;
+                            color: rgb(255, 255, 255);
+                            font-size: 1.1em;
+                            line-height: 2.2em;
+                        }
+
+                        /*Ô chọn số lượng*/
+                        .trangchu > .datve-banner-khuyenmai > .datve > .detail > .number > .loaive > select {
+                            width: 8em;
+                            padding: 0 0 0 1em;
+                        }
+
+                            .trangchu > .datve-banner-khuyenmai > .datve > .detail > .number > .loaive > select > option {
+                            }
+
+                        /*Chú thích độ tuổi*/
+                        .trangchu > .datve-banner-khuyenmai > .datve > .detail > .number > .loaive > .dotuoi {
+                            padding: 0 0 0 1em;
+                            color: rgba(255, 255, 255, .6);
+                            line-height: 2.5em;
+                        }
+
+                /*Tìm vé*/
+                .trangchu > .datve-banner-khuyenmai > .datve > .detail > .timkiem {
+                    height: 1%;
+                    overflow: hidden;
+                    padding: 1em 0;
+                }
+
+                    /*Video hướng dẫn*/
+                    .trangchu > .datve-banner-khuyenmai > .datve > .detail > .timkiem > a {
+                        color: rgb(255, 255, 255);
+                        font-weight: bold;
+                        font-size: 0.9em;
+                    }
+
+                        .trangchu > .datve-banner-khuyenmai > .datve > .detail > .timkiem > a > i {
+                            color: rgb(236, 32, 39);
+                            font-size: 2em;
+                            margin: 0 0.2em 0 0;
+                        }
+
+                    /*Nút tìm vé*/
+                    .trangchu > .datve-banner-khuyenmai > .datve > .detail > .timkiem > button {
+                        background: rgb(255,152,0);
+                        border: none;
+                        width: 12em;
+                        height: 3em;
+                        font-size: 1.3em;
+                        color: rgb(255, 255, 255);
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        text-align: center;
+                        padding: 0;
+                        transition: all .3s ease-in-out;
+                    }
+
+                        .trangchu > .datve-banner-khuyenmai > .datve > .detail > .timkiem > button > i {
+                            font-size: 1.5em;
+                            padding: 0 0.2em 0 0;
+                        }
+
+                        .trangchu > .datve-banner-khuyenmai > .datve > .detail > .timkiem > button:hover {
+                            background: rgb(245,124,0);
+                        }
+
+        /*Banner - khuyến mại*/
+        .trangchu > .datve-banner-khuyenmai > .banner-khuyenmai {
+            padding: 0 0 0 1em;
+        }
+
+            /*Banner*/
+            .trangchu > .datve-banner-khuyenmai > .banner-khuyenmai > .banner {
+                padding: 0;
+                border-radius: 0.5em;
+            }
+
+                /*Chấm thứ tự*/
+                .trangchu > .datve-banner-khuyenmai > .banner-khuyenmai > .banner > ol {
+                }
+
+                    .trangchu > .datve-banner-khuyenmai > .banner-khuyenmai > .banner > ol > li {
+                    }
+
+                .trangchu > .datve-banner-khuyenmai > .banner-khuyenmai > .banner > div {
+                }
+
+                    /*Ảnh banner*/
+                    .trangchu > .datve-banner-khuyenmai > .banner-khuyenmai > .banner > div > .item {
+                    }
+
+                        .trangchu > .datve-banner-khuyenmai > .banner-khuyenmai > .banner > div > .item > img {
+                            width: 100%;
+                            height: 20em;
+                        }
+
+            /*Khuyến mại*/
+            .trangchu > .datve-banner-khuyenmai > .banner-khuyenmai > .khuyenmai {
+                padding: 1em 0 0 0;
+            }
+
+                /*Tiêu đề*/
+                .trangchu > .datve-banner-khuyenmai > .banner-khuyenmai > .khuyenmai > .title {
+                    color: rgb(36, 71, 140);
+                    line-height: 1.5em;
+                    font-size: 1.2em;
+                    font-weight: bold;
+                    padding: 0 0 0 0.5em;
+                }
+
+                /*Nội dung*/
+                .trangchu > .datve-banner-khuyenmai > .banner-khuyenmai > .khuyenmai > ul {
+                    list-style: none;
+                }
+
+                    .trangchu > .datve-banner-khuyenmai > .banner-khuyenmai > .khuyenmai > ul > li {
+                        padding: 0 0 1em 0;
+                    }
+
+                        /*Tên chuyến*/
+                        .trangchu > .datve-banner-khuyenmai > .banner-khuyenmai > .khuyenmai > ul > li > .chuyen {
+                            margin: 0;
+                            padding: 0 0 0.3em 0.5em;
+                            background: url(../Front/images/trangchu/list-icon.png) no-repeat center left;
+                            line-height: 1.8em;
+                        }
+
+                        /*Ảnh hãng máy bay*/
+                        .trangchu > .datve-banner-khuyenmai > .banner-khuyenmai > .khuyenmai > ul > li > img {
+                            display: inline;
+                            width: 3.5em;
+                            height: 2em;
+                            border: solid 1px rgb(206, 206, 206);
+                        }
+
+                        /*Giá vé*/
+                        .trangchu > .datve-banner-khuyenmai > .banner-khuyenmai > .khuyenmai > ul > li > .gia {
+                            display: inline;
+                            padding: 0 0 0 1em;
+                        }
+
+                            .trangchu > .datve-banner-khuyenmai > .banner-khuyenmai > .khuyenmai > ul > li > .gia > span {
+                                font-weight: bold;
+                                color: rgb(232, 78, 15);
+                            }
+
+                        /*Nút liên hệ*/
+                        .trangchu > .datve-banner-khuyenmai > .banner-khuyenmai > .khuyenmai > ul > li > a {
+                            display: inline;
+                            float: right;
+                        }
+
+    /*Hình thức mua vé- hình thức thanh toán*/
+    .trangchu > .buy-pay {
+        padding: 0.5em 0 1em 0;
+        height: 1%;
+        overflow: hidden;
+        margin: 1em 0 0 0;
+        border: solid 1px rgb(200, 200, 200);
+        border-radius: 0.5em;
+    }
+
+        /*Mua vé*/
+        .trangchu > .buy-pay > .buy {
+            border-right: solid 1px rgb(231, 231, 231);
+        }
+
+            /*Tiêu đề*/
+            .trangchu > .buy-pay > .buy > .title {
+                border-bottom: dotted 1px rgb(231, 231, 231);
+                font-size: 1.3em;
+                color: rgb(20, 58, 131);
+                height: 5em;
+                padding: 1em 0 0 0;
+            }
+
+                .trangchu > .buy-pay > .buy > .title > span {
+                    font-weight: bold;
+                    font-size: 1.2em;
+                    padding: 0 0 0 0.5em;
+                }
+
+            .trangchu > .buy-pay > .buy > .info {
+            }
+
+                /*Truy cập website*/
+                .trangchu > .buy-pay > .buy > .info > .website {
+                }
+
+                    .trangchu > .buy-pay > .buy > .info > .website > .title {
+                        font-weight: bold;
+                        color: rgb(20, 58, 131);
+                    }
+
+                        .trangchu > .buy-pay > .buy > .info > .website > .title > span {
+                            font-size: 2em;
+                            color: rgba(0, 0, 0, .5);
+                        }
+
+                /*Chat qua mạng xã hội*/
+                .trangchu > .buy-pay > .buy > .info > .social {
+                }
+
+                    .trangchu > .buy-pay > .buy > .info > .social > .title {
+                        font-weight: bold;
+                        color: rgb(20, 58, 131);
+                    }
+
+                        .trangchu > .buy-pay > .buy > .info > .social > .title > span {
+                            font-size: 2em;
+                            color: rgba(0, 0, 0, .5);
+                        }
+
+                    .trangchu > .buy-pay > .buy > .info > .social > .logo {
+                        height: 1%;
+                        overflow: hidden;
+                        list-style: none;
+                        text-align: center;
+                    }
+
+                        .trangchu > .buy-pay > .buy > .info > .social > .logo > li {
+                            width: 5em;
+                            margin: 0 auto;
+                        }
+
+                            .trangchu > .buy-pay > .buy > .info > .social > .logo > li > a {
+                            }
+
+                                .trangchu > .buy-pay > .buy > .info > .social > .logo > li > a > img {
+                                    width: 3em;
+                                    height: 3em;
+                                }
+
+                /*Gọi qua điện thoại*/
+                .trangchu > .buy-pay > .buy > .info > .phone {
+                }
+
+                    .trangchu > .buy-pay > .buy > .info > .phone > .title {
+                        font-weight: bold;
+                        color: rgb(20, 58, 131);
+                    }
+
+                        .trangchu > .buy-pay > .buy > .info > .phone > .title > span {
+                            font-size: 2em;
+                            color: rgba(0, 0, 0, .5);
+                        }
+
+                    .trangchu > .buy-pay > .buy > .info > .phone > .number {
+                        height: 1%;
+                        overflow: hidden;
+                        padding: 0 0 0 4em;
+                    }
+
+                        .trangchu > .buy-pay > .buy > .info > .phone > .number > img {
+                            float: left;
+                            width: 1.5em;
+                        }
+
+                        .trangchu > .buy-pay > .buy > .info > .phone > .number > p {
+                            font-weight: bold;
+                            line-height: 2.5em;
+                            padding: 0 0 0 2em;
+                        }
+
+                            .trangchu > .buy-pay > .buy > .info > .phone > .number > p > span {
+                                color: rgb(238, 90, 36);
+                            }
+
+                /*Đến văn phòng*/
+                .trangchu > .buy-pay > .buy > .info > .map {
+                }
+
+                    .trangchu > .buy-pay > .buy > .info > .map > .title {
+                        font-weight: bold;
+                        color: rgb(20, 58, 131);
+                    }
+
+                        .trangchu > .buy-pay > .buy > .info > .map > .title > span {
+                            font-size: 2em;
+                            color: rgba(0, 0, 0, .5);
+                        }
+
+                    .trangchu > .buy-pay > .buy > .info > .map > iframe {
+                        padding: 0 0 0 3em;
+                        width: 100%;
+                        height: 20em;
+                    }
+
+        /*Thanh toán*/
+        .trangchu > .buy-pay > .pay {
+        }
+
+            .trangchu > .buy-pay > .pay > .title {
+                padding: 1.65em 0 0.5em 0;
+                border-bottom: dotted 1px rgb(231, 231, 231);
+                color: rgb(20, 58, 131);
+                font-weight: bold;
+                font-size: 1.8em;
+                margin: 0;
+            }
+
+            /*Các hình thức thanh toán*/
+            .trangchu > .buy-pay > .pay > .type-pay {
+                padding: 1em 0;
+            }
+
+                .trangchu > .buy-pay > .pay > .type-pay > .types {
+                    padding: 0.5em 0;
+                    border-bottom: dotted 1px rgb(231, 231, 231);
+                }
+
+                    .trangchu > .buy-pay > .pay > .type-pay > .types > img {
+                        width: 4em;
+                        display: inline-block;
+                        float: left;
+                    }
+
+                    .trangchu > .buy-pay > .pay > .type-pay > .types > p {
+                        text-align: justify;
+                        padding: 0 0 0 1em;
+                        display: inline-block;
+                        width: 85%;
+                    }
+
+                        .trangchu > .buy-pay > .pay > .type-pay > .types > p > span {
+                            font-weight: bold;
+                            text-transform: uppercase;
+                            font-size: 0.85em;
+                        }
+
+            /*Các ngân hàng*/
+            .trangchu > .buy-pay > .pay > .bank {
+            }
+
+                .trangchu > .buy-pay > .pay > .bank > img {
+                    margin: 0 auto;
+                }
+
+    /*Khách hàng nói về chúng tôi - Câu hỏi thường gặp*/
+    .trangchu > .feedback-quest {
+        height: 1%;
+        overflow: hidden;
+        margin: 1em 0 0 0;
+        padding: 1em 1em 0 1em;
+        border: solid 1px rgb(200, 200, 200);
+        border-radius: 0.5em;
+    }
+
+        /*Khách hàng nói về chúng tôi*/
+        .trangchu > .feedback-quest > .feedback {
+            padding: 0 0 1em 0;
+        }
+
+            /*Tiêu đề*/
+            .trangchu > .feedback-quest > .feedback > .title {
+                color: rgb(20, 58, 131);
+                font-weight: bold;
+                font-size: 1.8em;
+                padding: 0.3em 0 0.3em 0;
+                margin: 0;
+            }
+
+            /*Nội dung*/
+            .trangchu > .feedback-quest > .feedback > .content {
+                padding: 0;
+            }
+
+                .trangchu > .feedback-quest > .feedback > .content > .detail {
+                    border-top: dotted 1px rgb(231, 231, 231);
+                    padding: 1em 0 0.5em 0;
+                    height: 1%;
+                    overflow: hidden;
+                }
+
+                    .trangchu > .feedback-quest > .feedback > .content > .detail > img {
+                        float: left;
+                    }
+
+                    .trangchu > .feedback-quest > .feedback > .content > .detail > p {
+                        float: left;
+                        width: 85%;
+                        padding: 0 0 0 1em;
+                        font-size: 0.9em;
+                        font-style: italic;
+                        color: rgba(0, 0, 0, .6);
+                        margin: 0;
+                    }
+
+                        .trangchu > .feedback-quest > .feedback > .content > .detail > p > span {
+                            font-size: 0.95em;
+                            color: rgba(0, 0, 0, .4);
+                        }
+
+            /*Nút xem thêm*/
+            .trangchu > .feedback-quest > .feedback > a {
+                background: url(../Front/images/trangchu/more-bg.jpg) repeat-x;
+                background-size: 100%;
+                display: block;
+                float: right;
+                padding: 0.3em 0.3em;
+                border-radius: 0.2em;
+                color: rgb(255, 255, 255);
+                text-decoration: none;
+                margin-right: 16px;
+                text-align: center;
+                font-weight: bold;
+                font-size: 1.1em;
+            }
+
+        /*Câu hỏi thường gặp*/
+        .trangchu > .feedback-quest > .quest {
+            background: url(../Front/images/trangchu/quest-bg.png) no-repeat top center;
+            background-size: 100% 100%;
+            height: auto;
+            padding: 0 1em 1em 1em;
+        }
+
+            /*Tiêu đề*/
+            .trangchu > .feedback-quest > .quest > .title {
+                color: rgb(20, 58, 131);
+                font-weight: bold;
+                font-size: 1.5em;
+                padding: 0.5em 0 0.5em 0;
+            }
+
+            /*Nội dung*/
+            .trangchu > .feedback-quest > .quest > .content {
+                padding: 0 0 0 1em;
+            }
+
+                .trangchu > .feedback-quest > .quest > .content > ul {
+                    padding: 0;
+                    list-style: none;
+                }
+
+                    .trangchu > .feedback-quest > .quest > .content > ul > li {
+                        padding: 0;
+                        line-height: 2em;
+                    }
+
+                        .trangchu > .feedback-quest > .quest > .content > ul > li > a {
+                        }
+
+                            .trangchu > .feedback-quest > .quest > .content > ul > li > a > i {
+                                margin: 0 0.5em 0 0;
+                            }
+
+            /*Nút xem thêm*/
+            .trangchu > .feedback-quest > .quest > a {
+                background: url(../Front/images/trangchu/more-quest-icon.png) no-repeat center right;
+                padding: 0.2em 2.5em 0 0;
+                text-align: right;
+                right: 1em;
+            }
+
+
+/*Giao diện cho màn hình lớn*/
+@media (min-width: 1400px) {
+}
+
+/*Giao diện cho tablet (ngang)*/
+@media (min-width: 992px) and (max-width: 1024px) {
+    .trangchu {
+        width: 100%;
+        margin: 0;
+    }
+
+        /*Vé máy bay*/
+        .trangchu > .datve-banner-khuyenmai > .datve > .tabs > .airfare {
+            padding: 1em 1.5em;
+            width: 21em;
+        }
+
+        /*Khách sạn*/
+        .trangchu > .datve-banner-khuyenmai > .datve > .tabs > .hotel {
+            float: right;
+            background: url(../Front/images/trangchu/tabs-2.png) no-repeat top right;
+            background-size: 100%;
+            width: 19em;
+            height: 4em;
+            padding: 0.6em 0 0 4em;
+            margin: 0.5em 0.5em 0 0;
+        }
+}
+
+/*Giao diện cho tablet (dọc)*/
+@media (min-width: 768px) and (max-width: 991px) {
+    /*Phần đặt vé - banner - vé khuyến mãi*/
+    .trangchu > .datve-banner-khuyenmai > .datve > .tabs > .airfare {
+        height: 3.6em;
+        padding: 0.5em 0.5em 0 0.5em;
+        width: 15em;
+    }
+
+        .trangchu > .datve-banner-khuyenmai > .datve > .tabs > .airfare > img {
+            width: 2.5em;
+            padding: 0.25em 0 0 0;
+        }
+
+        .trangchu > .datve-banner-khuyenmai > .datve > .tabs > .airfare > p {
+            font-size: 1.5em;
+            line-height: 1.8em;
+            padding: 0 0 0 1.8em;
+        }
+
+    /*Khách sạn*/
+    .trangchu > .datve-banner-khuyenmai > .datve > .tabs > .hotel {
+        width: 13em;
+        height: 3.3em;
+        padding: 0.5em 0 0 1.8em;
+    }
+
+        .trangchu > .datve-banner-khuyenmai > .datve > .tabs > .hotel > img {
+            width: 1.8em;
+        }
+
+        .trangchu > .datve-banner-khuyenmai > .datve > .tabs > .hotel > p {
+            font-size: 1.2em;
+            line-height: 1.8em;
+            padding: 0 0 0 1.6em;
+        }
+
+    /*Khung thông tin vé*/
+    .trangchu > .datve-banner-khuyenmai > .datve > .detail > .books-info {
+        padding: 0 0 2em 0;
+    }
+
+        .trangchu > .datve-banner-khuyenmai > .datve > .detail > .books-info > .info > .point > .title > img {
+            margin-right: 0;
+        }
+
+        .trangchu > .datve-banner-khuyenmai > .datve > .detail > .books-info > .info > .point > .title-2 {
+            padding: 0;
+        }
+
+        /*Ô chọn địa điểm*/
+        .trangchu > .datve-banner-khuyenmai > .datve > .detail > .books-info > .info > .point > input {
+            width: 100%;
+        }
+
+        /*Thời gian*/
+        .trangchu > .datve-banner-khuyenmai > .datve > .detail > .books-info > .info > .dates {
+            padding: 1em 0 0 0;
+        }
+
+        .trangchu > .datve-banner-khuyenmai > .datve > .detail > .books-info > .info > .dates-2 {
+            padding-left: 0;
+        }
+
+        .trangchu > .datve-banner-khuyenmai > .datve > .detail > .books-info > .info > .dates > .choose {
+            margin: 0 0 0.5em 0;
+        }
+
+            /*Ô chọn tháng*/
+            .trangchu > .datve-banner-khuyenmai > .datve > .detail > .books-info > .info > .dates > .choose > .month {
+                width: 10em;
+                margin: 0 0 0 1em;
+            }
+
+            .trangchu > .datve-banner-khuyenmai > .datve > .detail > .books-info > .info > .dates > .choose > img {
+                margin: 0 0 0 1em;
+            }
+
+    /*Số lượng người đi*/
+    .trangchu > .datve-banner-khuyenmai > .datve > .detail > .number > .loaive > .loainguoi {
+        width: 5.5em;
+    }
+
+    /*Ô chọn số lượng*/
+    .trangchu > .datve-banner-khuyenmai > .datve > .detail > .number > .loaive > select {
+        width: 7em;
+    }
+
+    /*Tìm vé*/
+    .trangchu > .datve-banner-khuyenmai > .datve > .detail > .timkiem {
+        height: 1%;
+        overflow: hidden;
+        padding: 1em 0;
+    }
+
+        /*Video hướng dẫn*/
+        .trangchu > .datve-banner-khuyenmai > .datve > .detail > .timkiem > a {
+            text-align: center;
+            width: 100%;
+        }
+
+        /*Nút tìm vé*/
+        .trangchu > .datve-banner-khuyenmai > .datve > .detail > .timkiem > input {
+            width: 66%;
+            margin-left: 17%;
+            float: none !important;
+            text-align: right;
+            margin-top: 0.5em;
+        }
+
+    /*Hình thức mua vé- hình thức thanh toán*/
+    .trangchu > .buy-pay > .buy > .title {
+        padding: 1em 0 1em 0;
+        height: 1%;
+        overflow: hidden;
+    }
+
+    /*Truy cập website*/
+    .trangchu > .buy-pay > .buy > .info > .website > .title {
+        padding: 0 0 0 1em;
+    }
+
+    /*Chat qua mạng xã hội*/
+    .trangchu > .buy-pay > .buy > .info > .social > .logo > li {
+        width: 4.5em;
+    }
+
+    /*Thanh toán*/
+    .trangchu > .buy-pay > .pay > .title {
+        padding: 1.65em 0 1.85em 0;
+    }
+
+    /*Các hình thức thanh toán*/
+    .trangchu > .buy-pay > .pay > .type-pay > .types > p {
+        width: 75%;
+    }
+
+    /*Khách hàng nói về chúng tôi - Câu hỏi thường gặp*/
+    .trangchu > .feedback-quest > .quest {
+    }
+
+        .trangchu > .feedback-quest > .quest > .title {
+            padding: 1.2em 0 0.5em 0;
+        }
+
+        /*Nội dung*/
+        .trangchu > .feedback-quest > .quest > .content {
+            padding: 0;
+        }
+
+            .trangchu > .feedback-quest > .quest > .content > ul > li > a {
+                font-size: 0.9em;
+                text-align: justify;
+            }
+}
+
+/*Giao diện cho điện thoại*/
+@media (max-width: 767px) {
+    /*Vé máy bay*/
+    .trangchu > .datve-banner-khuyenmai > .datve {
+        padding: 0;
+        height: 12em;
+    }
+
+        .trangchu > .datve-banner-khuyenmai > .datve > .tabs > .airfare {
+            height: 3.1em;
+            padding: 0.5em 2em 0 1em;
+            width: 13em;
+        }
+
+            .trangchu > .datve-banner-khuyenmai > .datve > .tabs > .airfare > img {
+                width: 2em;
+            }
+
+            .trangchu > .datve-banner-khuyenmai > .datve > .tabs > .airfare > p {
+                font-size: 1em;
+                padding: 0.3em 0 0 2.5em;
+            }
+
+        /*Khách sạn*/
+        .trangchu > .datve-banner-khuyenmai > .datve > .tabs > .hotel {
+            float: right;
+            width: 10em;
+            height: 2.8em;
+            padding: 0.6em 0 0 1.6em;
+            margin: 0.5em 0.5em 0 0;
+        }
+
+            .trangchu > .datve-banner-khuyenmai > .datve > .tabs > .hotel > img {
+                width: 1.5em;
+            }
+
+            .trangchu > .datve-banner-khuyenmai > .datve > .tabs > .hotel > p {
+                font-size: 0.85em;
+                padding: 0.2em 0 0 2em;
+            }
+
+        /*Thông tin vé*/
+        .trangchu > .datve-banner-khuyenmai > .datve > .detail > .books-info {
+            padding: 0 0 1em 0;
+        }
+
+            .trangchu > .datve-banner-khuyenmai > .datve > .detail > .books-info > .info {
+                padding: 1em 0 0 0;
+            }
+
+                .trangchu > .datve-banner-khuyenmai > .datve > .detail > .books-info > .info > .point > .title > img {
+                    margin-right: 0;
+                }
+
+                .trangchu > .datve-banner-khuyenmai > .datve > .detail > .books-info > .info > .point > .title-2 {
+                    padding: 0;
+                }
+
+                /*Ô chọn địa điểm*/
+                .trangchu > .datve-banner-khuyenmai > .datve > .detail > .books-info > .info > .point > input {
+                    width: 100%;
+                }
+
+                .trangchu > .datve-banner-khuyenmai > .datve > .detail > .books-info > .info > .dates-2 {
+                    padding-left: 0;
+                }
+
+                /*Ô chọn tháng*/
+                .trangchu > .datve-banner-khuyenmai > .datve > .detail > .books-info > .info > .dates > .choose > .month {
+                    width: 10em;
+                    margin: 0 0 0 1em;
+                }
+
+                .trangchu > .datve-banner-khuyenmai > .datve > .detail > .books-info > .info > .dates > .choose > img {
+                    margin: 0 0 0 1em;
+                }
+
+                /*Lịch âm*/
+                .trangchu > .datve-banner-khuyenmai > .datve > .detail > .books-info > .info > .amlich {
+                    padding: 0.5em 0 0 0;
+                }
+
+        /*Số lượng người đi*/
+        .trangchu > .datve-banner-khuyenmai > .datve > .detail > .number > .loaive > .loainguoi {
+            width: 100%;
+        }
+
+        /*Tìm vé*/
+
+        /*Video hướng dẫn*/
+        .trangchu > .datve-banner-khuyenmai > .datve > .detail > .timkiem > a {
+            text-align: center;
+            float: none;
+            width: 100%;
+        }
+
+        /*Nút tìm vé*/
+        .trangchu > .datve-banner-khuyenmai > .datve > .detail > .timkiem > input {
+            width: 80% !important;
+            margin: 0.5em 0 0 10%;
+            text-align: right;
+            float: none !important;
+        }
+
+    /*Banner - khuyến mại*/
+    .trangchu > .datve-banner-khuyenmai > .banner-khuyenmai {
+        padding: 0;
+    }
+
+        /*Khuyến mại*/
+        .trangchu > .datve-banner-khuyenmai > .banner-khuyenmai > .khuyenmai {
+            padding: 0;
+        }
+
+    /*Hình thức mua vé- hình thức thanh toán*/
+    .trangchu > .buy-pay > .buy > .title {
+        height: 1%;
+        padding: 1em 0 0.3em 0;
+    }
+
+    /*Chat qua mạng xã hội*/
+    .trangchu > .buy-pay > .buy > .info > .social > .logo > li {
+        width: 5em;
+        margin: 0.3em auto;
+    }
+
+    /*Đến văn phòng*/
+    .trangchu > .buy-pay > .buy > .info > .map > .title {
+        padding: 0 0 0 1em;
+    }
+
+    .trangchu > .buy-pay > .buy > .info > .map > iframe {
+        padding: 0;
+    }
+
+    /*Các hình thức thanh toán*/
+
+    .trangchu > .buy-pay > .pay > .type-pay > .types > p {
+        width: 75%;
+    }
+
+    /*Khách hàng nói về chúng tôi - Câu hỏi thường gặp*/
+
+    .trangchu > .feedback-quest {
+        padding: 1em;
+    }
+
+        .trangchu > .feedback-quest > .feedback {
+            height: 1%;
+            overflow: hidden;
+        }
+
+            .trangchu > .feedback-quest > .feedback > .content > .detail > p {
+                width: 75%;
+            }
+
+            /*Nút xem thêm*/
+            .trangchu > .feedback-quest > .feedback > a {
+                width: 40%;
+                margin: 0.5em 0 0 0;
+            }
+
+        /*Câu hỏi thường gặp*/
+        .trangchu > .feedback-quest > .quest {
+            padding: 0 1em 3em 1em;
+        }
+
+            /*Tiêu đề*/
+            .trangchu > .feedback-quest > .quest > .title {
+                padding: 1.5em 0 0.5em 0;
+            }
+
+            .trangchu > .feedback-quest > .quest > .content > ul > li > a {
+                font-size: 0.9em;
+            }
+
+            /*Nút xem thêm*/
+            .trangchu > .feedback-quest > .quest > a {
+                right: 0;
+            }
+}

@@ -1,0 +1,575 @@
+﻿/*Trang liên hệ*/
+.lienhe {
+    background: rgb(255, 255, 255);
+}
+
+    /*Bài viết chính*/
+    .lienhe > .baiviet {
+        padding: 0;
+    }
+
+        /*Tiêu đề*/
+        .lienhe > .baiviet > .title {
+            font-size: 2.5em;
+            color: rgb(61, 90, 254);
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        /*Địa chỉ*/
+        .lienhe > .baiviet > .diachi {
+            font-size: 1.2em;
+            margin: 0;
+            line-height: 2em;
+            padding: 0 0 0.5em 0;
+        }
+
+            .lienhe > .baiviet > .diachi > span {
+                font-weight: bold;
+            }
+
+        /*Hotline*/
+        .lienhe > .baiviet > .hotline {
+            font-size: 1.2em;
+            color: rgb(255, 0, 0);
+            margin: 0;
+            padding: 0 0 2em 0;
+        }
+
+            .lienhe > .baiviet > .hotline > span {
+                font-weight: bold;
+            }
+
+        /*Thông tin phòng vé*/
+        .lienhe > .baiviet > ol {
+            padding: 0 1em;
+            margin: 0;
+        }
+
+            .lienhe > .baiviet > ol > li {
+                font-weight: bold;
+                padding: 0 0 3em 0;
+            }
+
+                /*Hình ảnh*/
+                .lienhe > .baiviet > ol > li > img {
+                    padding: 2em 0 0 0;
+                }
+
+                /*Bản đồ*/
+                .lienhe > .baiviet > ol > li > iframe {
+                    width: 100%;
+                    padding: 2em 0 0 0;
+                }
+
+                /*Thông tin người gửi*/
+                .lienhe > .baiviet > ol > li > form {
+                }
+
+                    /*Ô tên người gửi, email, số điện thoại*/
+                    .lienhe > .baiviet > ol > li > form > div {
+                        padding: 2em 1em 0 1em;
+                    }
+
+                        .lienhe > .baiviet > ol > li > form > div > p {
+                            font-weight: initial;
+                            margin: 0;
+                        }
+
+                            .lienhe > .baiviet > ol > li > form > div > p > span {
+                                color: rgb(255, 0, 0);
+                            }
+
+                        .lienhe > .baiviet > ol > li > form > div > input {
+                            display: block;
+                            border: none;
+                            width: 100%;
+                            padding: 0.6em 0 0.3em 0;
+                            border-bottom: solid 1px rgb(61, 90, 254);
+                            -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+                            transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+                            background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, rgb(61, 90, 254) 4%);
+                            background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, rgb(61, 90, 254) 4%);
+                            background-position: -20em 0;
+                            background-size: 100% 100%;
+                            background-repeat: no-repeat;
+                            float: left;
+                        }
+
+                            .lienhe > .baiviet > ol > li > form > div > input:focus {
+                                box-shadow: none;
+                                outline: none;
+                                background-position: 0 0;
+                            }
+
+                /*Ô nội dung gửi và nút gửi*/
+                .lienhe > .baiviet > ol > li > div {
+                    padding: 2em 0 0 0;
+                }
+
+                    /*Ô nội dung gửi*/
+                    .lienhe > .baiviet > ol > li > div > form {
+                    }
+
+                        .lienhe > .baiviet > ol > li > div > form > p {
+                            font-weight: initial;
+                        }
+
+                            .lienhe > .baiviet > ol > li > div > form > p > span {
+                                color: rgb(255, 0, 0);
+                            }
+
+                        .lienhe > .baiviet > ol > li > div > form > textarea {
+                            display: block;
+                            border: none;
+                            width: 100%;
+                            height: 15em;
+                            padding: 0.6em 0 0.3em 0;
+                            border-bottom: solid 1px rgb(61, 90, 254);
+                            -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+                            transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+                            background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, rgb(61, 90, 254) 4%);
+                            background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, rgb(61, 90, 254) 4%);
+                            background-position: -35em 0;
+                            background-size: 100% 103%;
+                            background-repeat: no-repeat;
+                            float: left;
+                        }
+
+                            .lienhe > .baiviet > ol > li > div > form > textarea:focus {
+                                box-shadow: none;
+                                outline: none;
+                                background-position: 0 0;
+                            }
+
+                    /*Nút gửi*/
+                    .lienhe > .baiviet > ol > li > div > div {
+                        padding: 2em 0 0 0;
+                    }
+
+                        .lienhe > .baiviet > ol > li > div > div > img {
+                            margin: 0 auto;
+                        }
+
+                        .lienhe > .baiviet > ol > li > div > div > button {
+                            margin: 1.4em 0 0 5%;
+                            border: none;
+                            background: rgb(61, 90, 254);
+                            cursor: pointer;
+                            border-radius: 3px;
+                            padding: 0.5em;
+                            width: 90%;
+                            color: rgb(255, 255, 255);
+                            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+                            transition: all 0.3s ease-in-out;
+                        }
+
+                            .lienhe > .baiviet > ol > li > div > div > button:hover {
+                                -webkit-transform: translateY(-3px);
+                                transform: translateY(-3px);
+                                box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+                            }
+
+    /*Tìm vé máy bay - tin khuyến mại*/
+    .lienhe > aside {
+        padding: 0 0 0 1em;
+    }
+
+        /*Tìm vé máy bay*/
+        .lienhe > aside > .timchuyenbay {
+            background: rgb(61, 90, 254);
+            padding: 2em 2em;
+        }
+
+            /*Tiêu đề*/
+            .lienhe > aside > .timchuyenbay > .title {
+                text-align: center;
+                border-bottom: dotted 1px rgb(255, 255, 255);
+            }
+
+                .lienhe > aside > .timchuyenbay > .title > img {
+                    padding: 0.3em 0 0 0.5em;
+                }
+
+                .lienhe > aside > .timchuyenbay > .title > p {
+                    font-size: 1.5em;
+                    color: rgb(255, 255, 255);
+                    text-transform: uppercase;
+                }
+
+            /*Thông tin tìm kiếm*/
+            .lienhe > aside > .timchuyenbay > .info {
+                color: rgb(255, 255, 255);
+            }
+
+                /*Nút chọn loại vé*/
+                .lienhe > aside > .timchuyenbay > .info > .loaive {
+                    padding: 1em 0 0 0;
+                    height: 1%;
+                    overflow: hidden;
+                }
+
+                    .lienhe > aside > .timchuyenbay > .info > .loaive > input {
+                        margin: 0.2em 0.5em 0 0;
+                    }
+
+                    .lienhe > aside > .timchuyenbay > .info > .loaive > p {
+                        margin: 0 1em 0 0;
+                    }
+
+                /*Ô nhập địa điểm*/
+                .lienhe > aside > .timchuyenbay > .info > .diadiem {
+                    padding: 1em 1em 0 1em;
+                }
+
+                    .lienhe > aside > .timchuyenbay > .info > .diadiem > div {
+                        padding: 0 0 0.5em;
+                    }
+
+                        .lienhe > aside > .timchuyenbay > .info > .diadiem > div > p {
+                            background: rgb(216, 216, 216);
+                            color: rgb(0, 0, 0);
+                            display: inline-block;
+                            width: 25%;
+                            height: 2.5em;
+                            padding: 0.5em 0.65em;
+                            margin: 0;
+                        }
+
+                        .lienhe > aside > .timchuyenbay > .info > .diadiem > div > input {
+                            width: 75%;
+                            height: 2.5em;
+                            border-radius: 0 !important;
+                        }
+
+                /*Ô chọn thời gian*/
+                .lienhe > aside > .timchuyenbay > .info > .thoigian {
+                    height: 1%;
+                    overflow: hidden;
+                    padding: 1em 0 0 0;
+                }
+
+                    .lienhe > aside > .timchuyenbay > .info > .thoigian > div {
+                        padding: 0 0.5em 0 0;
+                        ;
+                    }
+
+                    .lienhe > aside > .timchuyenbay > .info > .thoigian > .ngayve {
+                        padding: 0;
+                    }
+
+                    .lienhe > aside > .timchuyenbay > .info > .thoigian > div > p {
+                        background: rgb(216, 216, 216);
+                        color: rgb(0, 0, 0);
+                        display: inline-block;
+                        width: 40%;
+                        height: 2.5em;
+                        padding: 0.5em 0.3em;
+                        margin: 0;
+                    }
+
+                    .lienhe > aside > .timchuyenbay > .info > .thoigian > div > select {
+                        width: 60%;
+                        height: 2.5em;
+                        border-radius: 0 !important;
+                        padding: 0;
+                    }
+
+                        .lienhe > aside > .timchuyenbay > .info > .thoigian > div > select > option {
+                        }
+
+                /*Ô chọn số lượng vé*/
+                .lienhe > aside > .timchuyenbay > .info > .soluong {
+                    height: 1%;
+                    overflow: hidden;
+                    padding: 1em 0 0 0;
+                }
+
+                    .lienhe > aside > .timchuyenbay > .info > .soluong > div {
+                        padding: 0;
+                    }
+
+                        .lienhe > aside > .timchuyenbay > .info > .soluong > div > p {
+                        }
+
+                        .lienhe > aside > .timchuyenbay > .info > .soluong > div > select {
+                            width: 80%;
+                        }
+
+                            .lienhe > aside > .timchuyenbay > .info > .soluong > div > select > option {
+                            }
+
+                    /*Ôc họn số lượng cho trẻ em*/
+                    .lienhe > aside > .timchuyenbay > .info > .soluong > .treem {
+                    }
+
+                        .lienhe > aside > .timchuyenbay > .info > .soluong > .treem > p {
+                            padding: 0 0 0 0.7em;
+                        }
+
+                        .lienhe > aside > .timchuyenbay > .info > .soluong > .treem > select {
+                            margin: 0 0.8em;
+                        }
+
+                    /*Ôc họn số lượng cho em bé*/
+                    .lienhe > aside > .timchuyenbay > .info > .soluong > .embe {
+                    }
+
+                        .lienhe > aside > .timchuyenbay > .info > .soluong > .embe > p {
+                            padding: 0 0 0 1.45em;
+                        }
+
+                        .lienhe > aside > .timchuyenbay > .info > .soluong > .embe > select {
+                            float: right;
+                        }
+
+                /*Nút tìm vé*/
+                .lienhe > aside > .timchuyenbay > .info > button {
+                    background: rgb(255, 153, 51);
+                    border: none;
+                    padding: 1em 1em;
+                    margin: 1em 0 0 0;
+                    width: 100%;
+                }
+
+                    .lienhe > aside > .timchuyenbay > .info > button > img {
+                    }
+
+                    .lienhe > aside > .timchuyenbay > .info > button > p {
+                        font-size: 1.5em;
+                        color: rgb(255, 255, 255);
+                        text-transform: uppercase;
+                        padding: 0.15em 0 0 0;
+                        margin: 0;
+                    }
+
+        /*Tin khuyến mại*/
+        .lienhe > aside > .khuyenmai {
+            padding: 2em 0 0 0;
+        }
+
+            /*Tiêu đề*/
+            .lienhe > aside > .khuyenmai > .title {
+                font-size: 2em;
+                color: rgb(61, 90, 254);
+                text-transform: uppercase;
+                font-weight: bold;
+                padding: 0;
+            }
+
+            /*Các bài viết*/
+            .lienhe > aside > .khuyenmai > .content {
+                padding: 0;
+            }
+
+                /*Từng bài viết*/
+                .lienhe > aside > .khuyenmai > .content > div {
+                    padding: 0;
+                    border-top: dotted 1px rgb(0, 0, 0);
+                    padding: 0.5em 0 1em 0;
+                }
+
+                    .lienhe > aside > .khuyenmai > .content > div > .title {
+                        font-size: 1.1em;
+                        font-weight: bold;
+                        color: rgb(140, 158, 255);
+                        text-decoration: none;
+                        transition: all .2s ease-in-out;
+                    }
+
+                        .lienhe > aside > .khuyenmai > .content > div > .title:hover {
+                            color: rgb(48, 79, 254);
+                        }
+
+                    .lienhe > aside > .khuyenmai > .content > div > .detail {
+                        padding: 1em 0 0 0;
+                        height: 1%;
+                        overflow: hidden;
+                    }
+
+                        .lienhe > aside > .khuyenmai > .content > div > .detail > img {
+                        }
+
+                        .lienhe > aside > .khuyenmai > .content > div > .detail > p {
+                            text-align: justify;
+                            padding: 0 0 0 9em;
+                        }
+
+/*Giao diện cho màn hình lớn*/
+@media (min-width: 1400px) {
+}
+
+/*Giao diện cho tablet (ngang)*/
+@media (min-width: 992px) and (max-width: 1024px) {
+}
+
+/*Giao diện cho tablet (dọc)*/
+@media (min-width: 768px) and (max-width: 991px) {
+    /*Tìm vé máy bay - tin khuyến mại*/
+    .lienhe > aside {
+        padding: 2.5em 1em 0 1em;
+    }
+
+        /*Tiêu đề*/
+        .lienhe > aside > .timchuyenbay > .title {
+            font-size: 2em;
+            padding: 0 3.5em 0 0;
+        }
+
+            .lienhe > aside > .timchuyenbay > .title > img {
+                padding: 0.5em 0 0 0em;
+                width: 3em;
+            }
+
+        /*Tiêu đề*/
+        .lienhe > aside > .khuyenmai > .title {
+            border-bottom: dotted 1px rgb(0, 0, 0);
+            margin: 0;
+            padding: 0 0 0.5em 0;
+        }
+
+        /*Các bài viết*/
+        .lienhe > aside > .khuyenmai > .content {
+            height: 1%;
+            overflow: hidden;
+        }
+
+            /*Từng bài viết*/
+            .lienhe > aside > .khuyenmai > .content > div {
+                padding: 1em 1em 1em 0;
+                border: none;
+            }
+}
+
+/*Giao diện cho điện thoại*/
+@media (max-width: 767px) {
+
+    .lienhe > .baiviet {
+        padding: 3em 0 0 0;
+    }
+
+        /*Tiêu đề*/
+        .lienhe > .baiviet > .title {
+            font-size: 2em;
+        }
+
+        /*Địa chỉ*/
+        .lienhe > .baiviet > .diachi {
+            font-size: 1em;
+        }
+
+        /*Hotline*/
+        .lienhe > .baiviet > .hotline {
+            font-size: 1em;
+        }
+
+        /*Thông tin phòng vé*/
+        .lienhe > .baiviet > ol {
+            padding: 0 0 0 1em;
+            margin: 0;
+        }
+
+            .lienhe > .baiviet > ol > li {
+                padding: 0 0 3em 0;
+            }
+
+                /*Bản đồ*/
+                .lienhe > .baiviet > ol > li > iframe {
+                    height: 20em;
+                }
+
+                /*Ô tên người gửi, email, số điện thoại*/
+                .lienhe > .baiviet > ol > li > form > div {
+                    height: 1%;
+                    overflow: hidden;
+                }
+
+                /*Ô nội dung gửi*/
+                .lienhe > .baiviet > ol > li > div > form {
+                    height: 1%;
+                    overflow: hidden;
+                }
+
+                    .lienhe > .baiviet > ol > li > div > form > textarea {
+                        background-size: 100% 104%;
+                    }
+
+                        .lienhe > .baiviet > ol > li > div > form > textarea:focus {
+                            box-shadow: none;
+                            outline: none;
+                            background-position: 0 0;
+                        }
+
+    /*Tìm vé máy bay - tin khuyến mại*/
+    .lienhe > aside {
+        padding: 0;
+    }
+
+        /*Tiêu đề*/
+        .lienhe > aside > .timchuyenbay > .title > p {
+            font-size: 1.1em;
+        }
+
+        .lienhe > aside > .timchuyenbay > .info > .loaive > p {
+        }
+
+        /*Ô nhập địa điểm*/
+        .lienhe > aside > .timchuyenbay > .info > .diadiem > div > p {
+            width: 30%;
+        }
+
+        .lienhe > aside > .timchuyenbay > .info > .diadiem > div > input {
+            width: 70%;
+        }
+
+        /*Ô chọn thời gian*/
+        .lienhe > aside > .timchuyenbay > .info > .thoigian > div {
+            padding: 0 0 0.5em 0;
+        }
+
+            .lienhe > aside > .timchuyenbay > .info > .thoigian > div > p {
+                width: 30%;
+            }
+
+            .lienhe > aside > .timchuyenbay > .info > .thoigian > div > select {
+                width: 70%;
+            }
+
+        .lienhe > aside > .timchuyenbay > .info > .soluong > div {
+            padding: 0 0 0.5em 0;
+        }
+
+            .lienhe > aside > .timchuyenbay > .info > .soluong > div > p {
+                margin: 0;
+            }
+
+            .lienhe > aside > .timchuyenbay > .info > .soluong > div > select {
+                width: 100%;
+            }
+
+        .lienhe > aside > .timchuyenbay > .info > .soluong > .treem > p {
+            padding: 0;
+        }
+
+        .lienhe > aside > .timchuyenbay > .info > .soluong > .treem > select {
+            margin: 0;
+        }
+
+        .lienhe > aside > .timchuyenbay > .info > .soluong > .embe > p {
+            padding: 0;
+        }
+
+        .lienhe > aside > .timchuyenbay > .info > button > p {
+            font-size: 1.2em;
+            padding: 0.4em 0 0 2em;
+        }
+
+        .lienhe > aside > .khuyenmai > .content > div > .title {
+            font-size: 1em;
+        }
+
+            .lienhe > aside > .khuyenmai > .content > div > .title:hover {
+                color: rgb(48, 79, 254);
+            }
+}

@@ -1,0 +1,142 @@
+﻿<!--Tìm kiếm chuyến bay - Tin Khuyến Mại-->
+<aside class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+
+    <!--Tìm chuyến bay-->
+    <div class="timchuyenbay col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+        <!--Tiêu đề-->
+        <div class="title row">
+            <img src="~/Content/Front/images/icon/plane-icon.png" alt="" class="pull-left" />
+            <p>Đặt vé máy bay</p>
+        </div>
+
+        <!--Thông tin tìm kiếm-->
+        <div class="info row">
+
+            <!--Radio button chọn loại vé-->
+            <form class="loaive col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <input type="radio" name="loaive" value="khuhoi" class="pull-left" checked /><p class="pull-left">Khứ hồi</p>
+                <input type="radio" name="loaive" value="motchieu" class="pull-left" /><p class="pull-left">Một chiều</p>
+            </form>
+
+            <!--Nhập địa điểm-->
+            <form class="diadiem col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+                <!--Điểm đi-->
+                <div class="row">
+                    <p class="pull-left">Điểm đi</p>
+                    <input type="text" placeholder="Nhập tên hoặc mã thành phố đi" value="" class="form-control" />
+                </div>
+
+                <!--Điểm đến-->
+                <div class="row">
+                    <p class="pull-left">Điểm đến</p>
+                    <input type="text" placeholder="Nhập tên hoặc mã thành phố đến" value="" class="form-control" />
+                </div>
+            </form>
+
+            <!--Thời gian-->
+            <form class="thoigian col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+                <!--Ngày đi-->
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
+                    <p class="pull-left">Ngày đi</p>
+                    <select class="form-control">
+                        <option>15/11/2016</option>
+                        <option>16/11/2016</option>
+                        <option>17/11/2016</option>
+                        <option>18/11/2016</option>
+                        <option>19/11/2016</option>
+                    </select>
+                </div>
+
+                <!--Ngày về-->
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 ngayve">
+                    <p class="pull-left">Ngày về</p>
+                    <select class="form-control pull-left">
+                        <option>16/11/2016</option>
+                        <option>17/11/2016</option>
+                        <option>18/11/2016</option>
+                        <option>19/11/2016</option>
+                        <option>20/11/2016</option>
+                    </select>
+                </div>
+            </form>
+
+            <!--Số lượng vé-->
+            <form class="soluong col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+                <!--Vé cho người lớn-->
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <p>Người lớn</p>
+                    <select class="form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+
+                <!--Vé cho người lớn-->
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 treem">
+                    <p>Trẻ em (2-11)</p>
+                    <select class="form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+
+                <!--Vé cho người lớn-->
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 embe">
+                    <p>Em bé (< 2)</p>
+                    <select class="form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </form>
+
+            <!--Nút tìm vé máy bay-->
+            <button type="submit">
+                <img src="~/Content/Front/images/icon/search-flights.png" alt="" class="img-responsive pull-left" />
+                <p>Tìm kiếm chuyến bay</p>
+            </button>
+        </div>
+    </div>
+
+    <!--Tin khuyến mại-->
+    <div class="khuyenmai col-xs-12 col-sm-12 col-md-12 col-lg-12" ng-controller="categoryPostController">
+
+        <!--Tiêu đề-->
+        <p class="title col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            Tin khuyến mại
+        </p>
+
+        <!--Nội dung-->
+        <div class="content col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <span us-spinner="{radius:15, width:4, length: 8}"></span>
+            <p ng-hide="khuyenMais.length > 0" style="text-align:center; font-size:2em; color:#0c7b07">Chưa có bài viết nào</p>
+            <!--Từng tin-->
+            <div class="col-xs-12 col-sm-6 col-md-12 col-lg-12" dir-paginate="(index, value) in khuyenMais | itemsPerPage:8" ng-show="khuyenMais.length > 0">
+
+                <!--Tiêu đề-->
+                <a href="/bai-viet/{{value.alias}}-{{value.idPost}}" class="title">
+                    {{value.title}}
+                </a>
+
+                <!--Tóm tắt-->
+                <div class="detail">
+                    <img ng-src="{{value.image}}" alt="{{value.title}}" class="img-responsive pull-left" />
+                    <p>{{value.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>

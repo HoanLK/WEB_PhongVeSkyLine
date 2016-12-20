@@ -1,0 +1,90 @@
+﻿
+@{
+    ViewBag.Title = "Vé nội địa";
+}
+
+<!--Trang giới thiệu-->
+<section class="venoidia col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+
+    <!--Bài viết chính-->
+    <article class="baiviet col-xs-12 col-sm-12 col-md-8 col-lg-8">
+
+        <!--Tiêu đề-->
+        <p class="title row">
+            Đặt vé máy bay đi nội địa
+        </p>
+
+        <!--Nội dung-->
+        <div class="detail col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <p class="content">
+                Bạn đang có nhu cầu đặt vé máy bay đi Sài Gòn, Đà Nẵng hay Phú Quốc?
+                Dưới đây là những thông tin hướng dẫn hữu ích về: giá vé, các hãng hàng không, thời điểm mua vé thích hợp... chắc chắn bạn sẽ không thể bỏ qua.
+                Hãy bắt đầu lựa chọn cho mình tấm vé tốt nhất đi khắp mọi nơi trong nước cùng Skyline ngay bây giờ!
+            </p>
+
+            <!--Ảnh trong bài viết-->
+            <div class="anh">
+                <img src="~/Content/Front/images/anhbaiviet/img.png" alt="" class="img-responsive" />
+                <p>Sân bay Nội Bài - Hà Nội</p>
+            </div>
+            <p class="title">
+                Thông tin sân bay
+            </p>
+            <p class="content">
+                Skyline sẽ đưa bạn đến và dừng chân tại Sân bay quốc tế Nội Bài (Noi Bai International Airport).
+                Sân bay quốc tế Nội Bài là cảng hàng không quốc tế phục vụ chính cho Thủ đô Hà Nội và vùng lân cận.
+                Từ sân bay quốc tế Nội Bài về trung tâm Hà Nội qua cầu Thăng Long sẽ mất khoảng 22 phút.
+                Để di chuyển từ sân bay về Hà Nội và ngược lại bạn có thể đi taxi, giá dao động từ 200.000 VNĐ đến 300.000 VNĐ (Hãng Taxi Nội Bài chỉ 150.000 VNĐ).
+                Hoặc bạn cũng có thể đi xe buýt các hãng hàng (xe đỗ trước cửa nhà ga T1 đi ra khỏi cửa đi xuống phía bên tay phải). Giá xe buýt là 40.000 VNĐ/ lượt.
+            </p>
+            <p class="title">
+                Hãng hàng không khai thác đường bay trong nước
+            </p>
+            <p class="content">
+                Hiện có 3 hãng hàng không nội địa khai thác đường bay đến Hà Nội là Vietnam Airlines;
+                Vietjet Air và Jetstar. Cùng với đó là các hãng hàng không quốc tế khai thác đường bay tới Hà Nội như Aeroflot; AirAsia;
+                Asiana Airlines; Cebu Pacific; China Airlines; China Southern Airlines…
+            </p>
+            <p class="title">
+                Chặng bay và giá vé máy bay đi từ Hà Nội
+            </p>
+            <p class="content">
+                Các chặng bay nội địa: Hiện có 15 đường bay từ các thành phố nội địa đến Hà Nội. Skyline xin thống kê các đường bay cụ thể như sau:
+            </p>
+
+            <!--Chặng bay-->
+            <div class="duongbay row">
+                <ul class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <li>Điện Biên - Hà Nội</li>
+                    <li>Vinh - Hà Nội</li>
+                    <li>Huế - Hà Nội</li>
+                    <li>Đồng Hới - Hà Nội</li>
+                    <li>Đà Nẵng - Hà Nội</li>
+                    <li>Tam Kỳ - Hà Nội</li>
+                    <li>Pleiku - Hà Nội</li>
+                    <li>Tuy Hòa - Hà Nội</li>
+                </ul>
+                <ul class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <li>Tp Hồ Chí Minh - Hà Nội</li>
+                    <li>Nha Trang - Hà Nội</li>
+                    <li>Đà Lạt - Hà Nội</li>
+                    <li>Phú Quốc - Hà Nội</li>
+                    <li>Quy Nhơn - Hà Nội</li>
+                    <li>Cần Thơ - Hà Nội</li>
+                    <li>Buôn Mê Thuột - Hà Nội</li>
+                </ul>
+            </div>
+            <p class="title">
+                Đặt vé máy bay đi nội địa tại Skyline
+            </p>
+            <p class="content">
+                Truy cập phongveskyline.com để đặt vé máy bay trong nước với mức giá tốt nhất.
+                phongveskyline.com là đại lý vé máy bay chính thức của 3 hãng hàng không nội địa và hơn 300 hãng hàng không quốc tế.
+                Chỉ cần nhập điểm đi, điểm đến, ngày đi, ngày đến và số lượng người, hệ thống của chúng tôi sẽ tự động hiện ra bảng giá vé máy bay đi Hà Nội của tất cả các hãng hàng không để bạn lựa chọn.
+            </p>
+        </div>
+    </article>
+
+    <!--Tìm kiếm chuyến bay - Tin Khuyến Mại-->
+    @Html.Partial("_KM")
+</section>

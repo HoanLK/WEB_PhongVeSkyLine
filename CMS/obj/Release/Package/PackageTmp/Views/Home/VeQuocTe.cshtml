@@ -1,0 +1,73 @@
+﻿
+@{
+    ViewBag.Title = "Vé quốc tế";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!--Trang vé quốc tế-->
+<section class="vequocte col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+
+    <!--Bài viết chính-->
+    <article class="baiviet col-xs-12 col-sm-12 col-md-8 col-lg-8">
+
+        <!--Tiêu đề-->
+        <p class="title row">
+            Đặt vé máy bay đi quốc tế
+        </p>
+
+        <!--Nội dung-->
+        <div class="detail col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <p class="content">
+                Nếu như trước đây, bạn phải mất hàng giờ truy cập website từng hãng hàng không để tìm kiếm tấm vé phù hợp cho chuyến đi của mình,
+                thì giờ đây, với Phngveskyline.com bạn hoàn toàn có thể sở hữu vé máy bay đi quốc tế chỉ trong vòng 3 phút.
+            </p>
+
+            <!--Ảnh trong bài viết-->
+            <div class="anh">
+                <img src="~/Content/Front/images/anhbaiviet/quocte.png" alt="" class="img-responsive" />
+                <p>Sân bay Nội Bài - Hà Nội</p>
+            </div>
+
+            <!--bài viết-->
+            <p class="title">
+                Hành trình bay quốc tế từ Việt Nam
+            </p>
+            <p class="content">
+                Tại Việt Nam có 10 sân bay quốc tế thực hiện hành trình bay tới các châu lục Á, Âu, Mỹ, Phi… Cụ thể:
+            </p>
+
+            <!--Chặng bay-->
+            <div class="duongbay row">
+                <ul class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <li>Sân bay quốc tế Cần Thơ (Cần Thơ)</li>
+                    <li>Sân bay quốc tế Cam Ranh (Khánh Hòa)</li>
+                    <li>Sân bay quốc tế Đà Nẵng (Đà Nẵng)</li>
+                    <li>Sân bay quốc tế Phú Quốc (Kiên Giang)</li>
+                    <li>Sân bay quốc tế Cát Bi (Hải Phòng)</li>
+                    <li>Sân bay quốc tế Chu Lai (Quảng Nam)</li>
+                    <li>Sân bay quốc tế Nội Bài (Hà Nội)</li>
+                    <li>Sân bay quốc tế Tân Sơn Nhất (Tp Hồ Chí Minh)</li>
+                    <li>Sân bay quốc tế Phú Bài (Thừa Thiên - Huế)</li>
+                </ul>
+            </div>
+
+            <p class="content">
+                Trong đó Nội Bài và Tân Sơn Nhất hiện là 2 cảng hàng không lớn nhất, khai thác nhiều đường bay đi quốc tế nhất.
+            </p>
+            <p class="title">
+                Hãng hàng không khai thác đường bay trong nước
+            </p>
+            <p class="content">
+                Tại Việt Nam, từ các cảng hàng không trên, bạn có thể thực hiện hành trình bay tới các nước trên thế giới với tấm vé máy bay của hơn 350 hãng hàng không quốc tế và 3 hãng hàng không nội địa.
+            </p>
+            <p class="content">
+                - Hãng hàng không nội địa: Tính đến thời điểm này cả 3 hãng hàng không nội địa là: Vietnam Airlines, Vietjet Air và Jetstar đều có đường bay đi quốc tế. <br />
+                + Vietnam Airlines là hãng hàng không nội địa có mặt trên hầu hết trên khắp các đường bay quốc tế tới Châu Á, Châu Âu, Châu Mỹ, Châu Phi… <br />
+                + Jetstar: Hiện hãng này đang phục vụ đường bay tới 14 nước trên thế giới: Úc, Campuchia, Trung Quốc, Hongkong, Indonexia; Malaysia, Myanmar, Nhật
+            </p>
+        </div>
+    </article>
+
+    <!--Tìm kiếm chuyến bay - Tin Khuyến Mại-->
+    @Html.Partial("_KM")
+</section>

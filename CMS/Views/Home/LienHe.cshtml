@@ -1,0 +1,92 @@
+﻿
+@{
+    ViewBag.Title = "Liên hệ";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!--Trang liên hệ-->
+<section class="lienhe col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+
+    <!--Bài viết-->
+    <article class="baiviet col-xs-12 col-sm-12 col-md-8 col-lg-8">
+
+        <!--Tiêu đề-->
+        <p class="title row">
+            Phòng vé skyline
+        </p>
+
+        <!--Địa chỉ-->
+        <p class="diachi row">
+            <span>Địa chỉ:</span> Số 1 lô 22 Lê Hồng Phong, Cát Bi, Hải Phòng. <br />
+            <span>Điện thoại:</span> 0313.611.158
+        </p>
+
+        <!--Hotline-->
+        <p class="hotline row">
+            <span>Hotline:</span> 0906.028211 / 0981.200288
+        </p>
+
+        <!--Thông tin về phòng vé-->
+        <ol class="row">
+
+            <!--Hình ảnh phòng vé-->
+            <li>
+                Hình ảnh trụ sở văn phòng của Skyline <br />
+                <img src="~/Content/Front/images/anhbaiviet/lienhe.png" alt="" class="img-responsive" />
+            </li>
+
+            <!--Bản đồ-->
+            <li>
+                Bản đồ của Phòng vé Skyline tại Hải Phòng <br />
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3728.591880025354!2d106.70321161450116!3d20.84818058609649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314a7abc05725f3f%3A0x1e319a6ea48d1539!2zTMO0IDIyIEzDqiBI4buTbmcgUGhvbmcsIMSQw7RuZyBLaMOqLCBOZ8O0IFF1eeG7gW4sIEjhuqNpIFBow7JuZywgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1479542644097" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </li>
+
+            <!--Form gửi tin nhắn-->
+            <li>
+                Gửi tin nhắn cho Phòng vé Skyline <br />
+
+                <!--Thông tin người gửi-->
+                <form class="row" ng-controller="ContactController">
+
+                    <!--Ô tên người gửi-->
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" ng-class="{'has-error':!Contact.hoten, 'has-success':Contact.hoten}">
+                        <p>Tên người gửi (<span>*</span>)</p>
+                        <input type="text" id="name" placeholder="Họ tên (bắt buộc)" ng-model="Contact.hoten"/>
+                    </div>
+
+                    <!--Ô Email-->
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" ng-class="{'has-error':!Contact.email, 'has-success':Contact.email}">
+                        <p>Email (<span>*</span>)</p>
+                        <input type="text" id="email" placeholder="Email" ng-model="Contact.email"/>
+                    </div>
+
+                    <!--Ô số điện thoại-->
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" ng-class="{'has-error':!Contact.sdt, 'has-success':Contact.sdt}">
+                        <p>Số điện thoại (<span>*</span>)</p>
+                        <input type="text" id="sdt" placeholder="Số điện thoại (bắt buộc)" ng-model="Contact.sdt"/>
+                    </div>
+                </form>
+
+                <!--Nội dung và nút gửi-->
+                <div class="row">
+
+                    <!--Ô nhập nội dung-->
+                    <form class="col-xs-12 col-sm-8 col-md-8 col-lg-8" ng-class="{'has-error':!Contact.content, 'has-success':Contact.content}">
+                        <p>Nội dung (<span>*</span>)</p>
+                        <textarea cols="50" rows="10" id="noidung" placeholder="Nội dung liên hệ" ng-model="Contact.content"></textarea>
+                    </form>
+
+                    <!--Nút gửi-->
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <img src="~/Content/Front/images/anhbaiviet/form-lienhe.png" alt="" class="img-responsive" />
+                        <button type="submit">Gửi đi</button>
+                    </div>
+                </div>
+            </li>
+        </ol>
+    </article>
+
+    <!--Tìm kiếm chuyến bay - Tin Khuyến Mại-->
+    @Html.Partial("_KM")
+
+</section>

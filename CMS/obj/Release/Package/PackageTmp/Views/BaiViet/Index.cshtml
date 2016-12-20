@@ -1,0 +1,23 @@
+﻿@model CMS.Models.Post
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="venoidia col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+
+    <!--Bài viết chính-->
+    <article class="baiviet col-xs-12 col-sm-12 col-md-8 col-lg-8" ng-controller="postController">
+        <input type="hidden" value="@Model.idPost" id="idPost" />
+        <!--Tiêu đề-->
+        <p class="title row">
+            {{post.title}}
+        </p>
+
+        <!--Nội dung-->
+        <div class="detail col-xs-12 col-sm-12 col-md-12 col-lg-12" ng-bind-html="post.content">
+            </div>
+    </article>
+
+    <!--Tìm kiếm chuyến bay - Tin Khuyến Mại-->
+    @Html.Partial("_KM")
+</section>

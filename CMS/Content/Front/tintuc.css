@@ -1,0 +1,455 @@
+/*Trang vé nội địa*/
+.tintuc {
+    background: rgb(255, 255, 255);
+    padding: 0 1em;
+}
+
+    /*Danh sách bài viết*/
+    .tintuc > .danhsachbaiviet {
+        border-right: dotted 1px rgb(100, 100, 100);
+        padding: 0 1em 0 0;
+    }
+
+        /*Danh sach*/
+        .tintuc > .danhsachbaiviet > .list {
+            height: 1%;
+            overflow: hidden;
+            padding: 0;
+        }
+
+            /*Từng bài viết*/
+            .tintuc > .danhsachbaiviet > .list > .topic {
+                height: 1%;
+                overflow: hidden;
+                padding: 1em 0;
+                border-top: dotted 1px rgb(100, 100, 100);
+            }
+
+                /*Ảnh đại diện bài viết*/
+                .tintuc > .danhsachbaiviet > .list > .topic > img {
+                    padding: 0;
+                }
+
+                /*Tóm tắt bài viết*/
+                .tintuc > .danhsachbaiviet > .list > .topic > .info {
+                    padding: 0 0 0 1em;
+                }
+
+                    /*Tiêu đề*/
+                    .tintuc > .danhsachbaiviet > .list > .topic > .info > .title {
+                        font-size: 1.1em;
+                        text-align: justify;
+                        text-decoration: none;
+                        font-weight: bold;
+                        padding: 0;
+                    }
+
+                    /*Ngày đăng*/
+                    .tintuc > .danhsachbaiviet > .list > .topic > .info > .ngaydang {
+                        padding: 0;
+                        font-size: 0.9em;
+                        font-style: italic;
+                        color: rgb(255, 0, 0);
+                    }
+
+                    /*Nội dung*/
+                    .tintuc > .danhsachbaiviet > .list > .topic > .info > .detail {
+                        padding: 0;
+                        text-align: justify;
+                    }
+
+        /*Số trang*/
+        .tintuc > .danhsachbaiviet > nav {
+            height: 1%;
+            overflow: hidden;
+            padding: 0 0 1em 0;
+        }
+
+            .tintuc > .danhsachbaiviet > nav > ul {
+                float: right;
+                margin: 0;
+            }
+
+                .tintuc > .danhsachbaiviet > nav > ul > li {
+                }
+
+                    .tintuc > .danhsachbaiviet > nav > ul > li > a {
+                    }
+
+                    .tintuc > .danhsachbaiviet > nav > ul > li > .previous {
+                    }
+
+                    .tintuc > .danhsachbaiviet > nav > ul > li > .next {
+                    }
+
+    /*Tìm vé máy bay - tin khuyến mại*/
+    .tintuc > aside {
+        padding: 0 0 0 1em;
+    }
+
+        /*Tìm vé máy bay*/
+        .tintuc > aside > .timchuyenbay {
+            background: rgb(61, 90, 254);
+            padding: 2em 2em;
+        }
+
+            /*Tiêu đề*/
+            .tintuc > aside > .timchuyenbay > .title {
+                text-align: center;
+                border-bottom: dotted 1px rgb(255, 255, 255);
+            }
+
+                .tintuc > aside > .timchuyenbay > .title > img {
+                    padding: 0.3em 0 0 0.5em;
+                }
+
+                .tintuc > aside > .timchuyenbay > .title > p {
+                    font-size: 1.5em;
+                    color: rgb(255, 255, 255);
+                    text-transform: uppercase;
+                }
+
+            /*Thông tin tìm kiếm*/
+            .tintuc > aside > .timchuyenbay > .info {
+                color: rgb(255, 255, 255);
+            }
+
+                /*Nút chọn loại vé*/
+                .tintuc > aside > .timchuyenbay > .info > .loaive {
+                    padding: 1em 0 0 0;
+                    height: 1%;
+                    overflow: hidden;
+                }
+
+                    .tintuc > aside > .timchuyenbay > .info > .loaive > input {
+                        margin: 0.2em 0.5em 0 0;
+                    }
+
+                    .tintuc > aside > .timchuyenbay > .info > .loaive > p {
+                        margin: 0 1em 0 0;
+                    }
+
+                /*Ô nhập địa điểm*/
+                .tintuc > aside > .timchuyenbay > .info > .diadiem {
+                    padding: 1em 1em 0 1em;
+                }
+
+                    .tintuc > aside > .timchuyenbay > .info > .diadiem > div {
+                        padding: 0 0 0.5em;
+                    }
+
+                        .tintuc > aside > .timchuyenbay > .info > .diadiem > div > p {
+                            background: rgb(216, 216, 216);
+                            color: rgb(0, 0, 0);
+                            display: inline-block;
+                            width: 25%;
+                            height: 2.5em;
+                            padding: 0.5em 0.65em;
+                            margin: 0;
+                        }
+
+                        .tintuc > aside > .timchuyenbay > .info > .diadiem > div > input {
+                            width: 75%;
+                            height: 2.5em;
+                            border-radius: 0 !important;
+                        }
+
+                /*Ô chọn thời gian*/
+                .tintuc > aside > .timchuyenbay > .info > .thoigian {
+                    height: 1%;
+                    overflow: hidden;
+                    padding: 1em 0 0 0;
+                }
+
+                    .tintuc > aside > .timchuyenbay > .info > .thoigian > div {
+                        padding: 0 0.5em 0 0;
+                        ;
+                    }
+
+                    .tintuc > aside > .timchuyenbay > .info > .thoigian > .ngayve {
+                        padding: 0;
+                    }
+
+                    .tintuc > aside > .timchuyenbay > .info > .thoigian > div > p {
+                        background: rgb(216, 216, 216);
+                        color: rgb(0, 0, 0);
+                        display: inline-block;
+                        width: 40%;
+                        height: 2.5em;
+                        padding: 0.5em 0.3em;
+                        margin: 0;
+                    }
+
+                    .tintuc > aside > .timchuyenbay > .info > .thoigian > div > select {
+                        width: 60%;
+                        height: 2.5em;
+                        border-radius: 0 !important;
+                        padding: 0;
+                    }
+
+                        .tintuc > aside > .timchuyenbay > .info > .thoigian > div > select > option {
+                        }
+
+                /*Ô chọn số lượng vé*/
+                .tintuc > aside > .timchuyenbay > .info > .soluong {
+                    height: 1%;
+                    overflow: hidden;
+                    padding: 1em 0 0 0;
+                }
+
+                    .tintuc > aside > .timchuyenbay > .info > .soluong > div {
+                        padding: 0;
+                    }
+
+                        .tintuc > aside > .timchuyenbay > .info > .soluong > div > p {
+                        }
+
+                        .tintuc > aside > .timchuyenbay > .info > .soluong > div > select {
+                            width: 80%;
+                        }
+
+                            .tintuc > aside > .timchuyenbay > .info > .soluong > div > select > option {
+                            }
+
+                    /*Ôc họn số lượng cho trẻ em*/
+                    .tintuc > aside > .timchuyenbay > .info > .soluong > .treem {
+                    }
+
+                        .tintuc > aside > .timchuyenbay > .info > .soluong > .treem > p {
+                            padding: 0 0 0 0.7em;
+                        }
+
+                        .tintuc > aside > .timchuyenbay > .info > .soluong > .treem > select {
+                            margin: 0 0.8em;
+                        }
+
+                    /*Ôc họn số lượng cho em bé*/
+                    .tintuc > aside > .timchuyenbay > .info > .soluong > .embe {
+                    }
+
+                        .tintuc > aside > .timchuyenbay > .info > .soluong > .embe > p {
+                            padding: 0 0 0 1.45em;
+                        }
+
+                        .tintuc > aside > .timchuyenbay > .info > .soluong > .embe > select {
+                            float: right;
+                        }
+
+                /*Nút tìm vé*/
+                .tintuc > aside > .timchuyenbay > .info > button {
+                    background: rgb(255, 153, 51);
+                    border: none;
+                    padding: 1em 1em;
+                    margin: 1em 0 0 0;
+                    width: 100%;
+                }
+
+                    .tintuc > aside > .timchuyenbay > .info > button > img {
+                    }
+
+                    .tintuc > aside > .timchuyenbay > .info > button > p {
+                        font-size: 1.5em;
+                        color: rgb(255, 255, 255);
+                        text-transform: uppercase;
+                        padding: 0.15em 0 0 0;
+                        margin: 0;
+                    }
+
+        /*Tin khuyến mại*/
+        .tintuc > aside > .khuyenmai {
+            padding: 2em 0 0 0;
+        }
+
+            /*Tiêu đề*/
+            .tintuc > aside > .khuyenmai > .title {
+                font-size: 2em;
+                color: rgb(61, 90, 254);
+                text-transform: uppercase;
+                font-weight: bold;
+                padding: 0;
+            }
+
+            /*Các bài viết*/
+            .tintuc > aside > .khuyenmai > .content {
+                padding: 0;
+            }
+
+                /*Từng bài viết*/
+                .tintuc > aside > .khuyenmai > .content > div {
+                    padding: 0;
+                    border-top: dotted 1px rgb(0, 0, 0);
+                    padding: 0.5em 0 1em 0;
+                }
+
+                    .tintuc > aside > .khuyenmai > .content > div > .title {
+                        font-size: 1.1em;
+                        font-weight: bold;
+                        color: rgb(140, 158, 255);
+                        text-decoration: none;
+                        transition: all .2s ease-in-out;
+                    }
+
+                        .tintuc > aside > .khuyenmai > .content > div > .title:hover {
+                            color: rgb(48, 79, 254);
+                        }
+
+                    .tintuc > aside > .khuyenmai > .content > div > .detail {
+                        padding: 1em 0 0 0;
+                        height: 1%;
+                        overflow: hidden;
+                    }
+
+                        .tintuc > aside > .khuyenmai > .content > div > .detail > img {
+                        }
+
+                        .tintuc > aside > .khuyenmai > .content > div > .detail > p {
+                            text-align: justify;
+                            padding: 0 0 0 9em;
+                        }
+
+/*Giao diện cho màn hình lớn*/
+@media (min-width: 1400px) {
+}
+
+/*Giao diện cho tablet (ngang)*/
+@media (min-width: 992px) and (max-width: 1024px) {
+}
+
+/*Giao diện cho tablet (dọc)*/
+@media (min-width: 768px) and (max-width: 991px) {
+    /*Danh sách bài viết*/
+    .tintuc > .danhsachbaiviet {
+        border-right: none;
+        padding: 0;
+    }
+
+    /*Tìm vé máy bay - tin khuyến mại*/
+    .tintuc > aside {
+        padding: 2.5em 0 0 0;
+    }
+
+        /*Tiêu đề*/
+        .tintuc > aside > .timchuyenbay > .title {
+            font-size: 2em;
+            padding: 0 3.5em 0 0;
+        }
+
+            .tintuc > aside > .timchuyenbay > .title > img {
+                padding: 0.5em 0 0 0em;
+                width: 3em;
+            }
+
+        /*Tiêu đề*/
+        .tintuc > aside > .khuyenmai > .title {
+            border-bottom: dotted 1px rgb(0, 0, 0);
+            margin: 0;
+            padding: 0 0 0.5em 0;
+        }
+
+        /*Các bài viết*/
+        .tintuc > aside > .khuyenmai > .content {
+            height: 1%;
+            overflow: hidden;
+        }
+
+            /*Từng bài viết*/
+            .tintuc > aside > .khuyenmai > .content > div {
+                padding: 1em 1em 1em 0;
+                border: none;
+            }
+}
+
+/*Giao diện cho điện thoại*/
+@media (max-width: 767px) {
+    /*Danh sách bài viết*/
+    .tintuc > .danhsachbaiviet {
+        border-right: none;
+        padding: 0 0 5em 0;
+    }
+
+        /*Tóm tắt bài viết*/
+        .tintuc > .danhsachbaiviet > .list > .topic > .info {
+            padding: 1em 0 0 0;
+        }
+
+        /*Số trang*/
+        .tintuc > .danhsachbaiviet > nav {
+            text-align: center;
+        }
+
+            .tintuc > .danhsachbaiviet > nav > ul {
+                float: none;
+            }
+
+    /*Tìm vé máy bay - tin khuyến mại*/
+    .tintuc > aside {
+        padding: 0;
+    }
+
+        /*Tiêu đề*/
+        .tintuc > aside > .timchuyenbay > .title > p {
+            font-size: 1.1em;
+        }
+
+        .tintuc > aside > .timchuyenbay > .info > .loaive > p {
+        }
+
+        /*Ô nhập địa điểm*/
+        .tintuc > aside > .timchuyenbay > .info > .diadiem > div > p {
+            width: 30%;
+        }
+
+        .tintuc > aside > .timchuyenbay > .info > .diadiem > div > input {
+            width: 70%;
+        }
+
+        /*Ô chọn thời gian*/
+        .tintuc > aside > .timchuyenbay > .info > .thoigian > div {
+            padding: 0 0 0.5em 0;
+        }
+
+            .tintuc > aside > .timchuyenbay > .info > .thoigian > div > p {
+                width: 30%;
+            }
+
+            .tintuc > aside > .timchuyenbay > .info > .thoigian > div > select {
+                width: 70%;
+            }
+
+        .tintuc > aside > .timchuyenbay > .info > .soluong > div {
+            padding: 0 0 0.5em 0;
+        }
+
+            .tintuc > aside > .timchuyenbay > .info > .soluong > div > p {
+                margin: 0;
+            }
+
+            .tintuc > aside > .timchuyenbay > .info > .soluong > div > select {
+                width: 100%;
+            }
+
+        .tintuc > aside > .timchuyenbay > .info > .soluong > .treem > p {
+            padding: 0;
+        }
+
+        .tintuc > aside > .timchuyenbay > .info > .soluong > .treem > select {
+            margin: 0;
+        }
+
+        .tintuc > aside > .timchuyenbay > .info > .soluong > .embe > p {
+            padding: 0;
+        }
+
+        .tintuc > aside > .timchuyenbay > .info > button > p {
+            font-size: 1.2em;
+            padding: 0.4em 0 0 2em;
+        }
+
+        .tintuc > aside > .khuyenmai > .content > div > .title {
+            font-size: 1em;
+        }
+
+            .tintuc > aside > .khuyenmai > .content > div > .title:hover {
+                color: rgb(48, 79, 254);
+            }
+}

@@ -1,0 +1,1368 @@
+body {
+    background: rgb(239, 239, 239);
+    padding: 0 !important;
+}
+
+/*Menu và quảng cáo 2 bên*/
+.ads-menu {
+    padding: 0;
+}
+
+    /*Menu*/
+    .ads-menu > header {
+        padding: 0 0 1em 0;
+        background: rgb(255, 255, 255);
+    }
+
+        .ads-menu > header > .desktop {
+            padding: 0;
+        }
+
+            .ads-menu > header > .desktop > .sologan > p {
+            }
+
+            /*Logo - hotline*/
+            .ads-menu > header > .desktop > .logo-hotline {
+                height: 18em;
+                background: url(../Front/images/trangchu/banner-bg.jpg) 0 -10em no-repeat;
+                background-size: 100%;
+                padding: 0;
+            }
+
+                /*.ads-menu > header > .desktop > .logo-hotline > a {
+                    padding: 0;
+                    display: inline-flex;
+                    text-decoration: none;
+                    text-align: center;
+                    background: rgba(255, 255, 255, .2);
+                }*/
+
+                .ads-menu > header > .desktop > .logo-hotline > .logo {
+                    background: rgba(255, 255, 255, .3);
+                    border-radius: 10em;
+                    width: 15em;
+                    height: 15em;
+                    text-align: center;
+                    float: left;
+                    transition: all .3s ease-in-out;
+                    margin: 1em 0 0 1em;
+                }
+
+                    .ads-menu > header > .desktop > .logo-hotline > .logo:hover {
+                        background: rgba(255, 255, 255, .8);
+                    }
+
+                    .ads-menu > header > .desktop > .logo-hotline > .logo > img {
+                        padding: 0;
+                        height: 4.5em;
+                        margin: 5.5em auto;
+                    }
+
+                .ads-menu > header > .desktop > .logo-hotline > .hotline {
+                    float: right;
+                    display: inline-flex;
+                    background: rgb(255, 255, 255);
+                    text-decoration: none;
+                    padding: 0.5em;
+                }
+
+                    .ads-menu > header > .desktop > .logo-hotline > .hotline > i {
+                        font-size: 2em;
+                        color: rgb(255, 0, 0);
+                        padding: 0;
+                        margin: 0.3em 0.5em 0 0;
+                    }
+
+                    .ads-menu > header > .desktop > .logo-hotline > .hotline > p {
+                        color: rgb(21, 101, 192);
+                        margin: 0 0 0 0;
+                        transition: all .3s ease-in-out;
+                        padding: 15% 0 0 0;
+                    }
+
+                    .ads-menu > header > .desktop > .logo-hotline > .hotline:hover > p {
+                        color: rgb(255, 0, 0);
+                    }
+
+                    .ads-menu > header > .desktop > .logo-hotline > .hotline > p > span {
+                        font-size: 1.2em;
+                        color: rgb(255, 0, 0);
+                        transition: all .3s ease-in-out;
+                    }
+
+                    .ads-menu > header > .desktop > .logo-hotline > .hotline:hover > p > span {
+                        color: rgb(21, 101, 192);
+                    }
+
+            /*Menu*/
+            .ads-menu > header > .desktop > .menu {
+                padding: 0;
+                margin: 0 0 1em 0;
+                background: #1976D2;
+            }
+
+                .ads-menu > header > .desktop > .menu > ul {
+                    display: inline-flex;
+                    padding: 0 1.5em;
+                    margin: 0;
+                    list-style: none;
+                }
+
+                    .ads-menu > header > .desktop > .menu > ul > li {
+                    }
+
+                        .ads-menu > header > .desktop > .menu > ul > li > a {
+                            background-color: transparent;
+                            font-size: 1.2em;
+                            color: rgb(255, 255, 255);
+                            display: block;
+                            padding: 0.6em 0.7em;
+                            text-decoration: none;
+                            transition: all .2s ease-in-out;
+                        }
+
+                            .ads-menu > header > .desktop > .menu > ul > li > a:hover {
+                                background: rgb(255,255,255);
+                                color: #0D47A1;
+                            }
+
+                            .ads-menu > header > .desktop > .menu > ul > li > a > i {
+                                margin: 0 0.5em 0 0;
+                            }
+
+            /*Dòng nổi bật*/
+            .ads-menu > header > .desktop > a {
+                font-size: 1.2em;
+                color: rgb(255, 0, 0);
+                text-decoration: none;
+                text-align: center;
+                display: block;
+            }
+
+                .ads-menu > header > .desktop > a > img {
+                    margin: 0 0.5em;
+                }
+
+    /*Quảng cáo bên trái*/
+    .ads-menu > .ads-left {
+        text-align: center;
+        position: fixed;
+        padding: 0 0.5em;
+    }
+
+        .ads-menu > .ads-left > a {
+            padding: 0;
+        }
+
+            .ads-menu > .ads-left > a > img {
+                width: 100%;
+                margin: 0.5em 0;
+            }
+
+    /*Quảng cáo bên phải*/
+    .ads-menu > .ads-right {
+        text-align: center;
+        padding: 0 0.5em;
+        position: fixed;
+    }
+
+        /*Điện thoại liên hệ*/
+        .ads-menu > .ads-right > div {
+            padding: 0 0.3em;
+            margin: 0.5em 0 0.5em 0;
+            border: solid 2px rgb(255, 0, 0);
+            border-radius: 0.5em;
+            background: rgb(255, 255, 255);
+        }
+
+            /*Tiêu đề*/
+            .ads-menu > .ads-right > div > .title {
+                font-size: 1.3em;
+                color: rgb(255, 0, 0);
+                padding: 0.5em 0;
+                border-bottom: solid 1px rgba(0, 0, 0, .1);
+            }
+
+            /*Các số điện thoại*/
+            .ads-menu > .ads-right > div > .phone {
+                text-align: left;
+                padding: 0;
+            }
+
+                .ads-menu > .ads-right > div > .phone > a {
+                    text-decoration: none;
+                    padding: 1em 0;
+                    height: 1%;
+                    overflow: hidden;
+                }
+
+                    .ads-menu > .ads-right > div > .phone > a > p {
+                        color: rgb(255, 0, 0);
+                        padding: 0;
+                        margin: 0;
+                        font-weight: bold;
+                        text-align: center;
+                    }
+
+                        .ads-menu > .ads-right > div > .phone > a > p > i {
+                            margin: 0 0.5em 0 0;
+                        }
+
+                    .ads-menu > .ads-right > div > .phone > a > .number {
+                        font-weight: inherit;
+                        border-bottom: solid 1px rgba(0, 0, 0, .1);
+                        padding: 0 0 0.3em 0;
+                        margin: 0 0 0.3em 0;
+                    }
+
+            /*Nút mạng xã hội*/
+            .ads-menu > .ads-right > div > .social {
+                padding: 0 0.3em;
+            }
+
+                .ads-menu > .ads-right > div > .social > p {
+                }
+
+                .ads-menu > .ads-right > div > .social > div {
+                    padding: 0;
+                }
+
+                    .ads-menu > .ads-right > div > .social > div > iframe {
+                        width: 75%;
+                    }
+
+        /*Quảng cáo thứ 2*/
+        .ads-menu > .ads-right > a {
+            padding: 0;
+        }
+
+            .ads-menu > .ads-right > a > img {
+                width: 100%;
+                margin: 0.5em 0 0 0;
+            }
+
+/*Danh sách vé máy bay và footer*/
+.airfare-footer {
+    height: 1%;
+    overflow: hidden;
+    background: rgb(255, 255, 255);
+    padding: 3em 0 0 0;
+}
+
+    /*Danh sách vé máy bay*/
+    .airfare-footer > .list-airfare {
+        height: 1%;
+        overflow: hidden;
+    }
+
+        .airfare-footer > .list-airfare > ul {
+        }
+
+            .airfare-footer > .list-airfare > ul > .title {
+                list-style: none;
+                font-size: 1.1em;
+            }
+
+            .airfare-footer > .list-airfare > ul > li {
+                line-height: 1.7em;
+            }
+
+                .airfare-footer > .list-airfare > ul > li > a {
+                    font-family: : Roboto-Light;
+                    color: rgba(0, 0, 0, .5);
+                    text-decoration: none;
+                    transition: all .3s ease-in-out;
+                }
+
+                    .airfare-footer > .list-airfare > ul > li > a:hover {
+                        color: rgb(255, 0, 0);
+                    }
+
+    /*Footer*/
+    .airfare-footer > footer {
+        height: 1%;
+        overflow: hidden;
+        padding: 0;
+        background: url(../Front/images/footer-bg.png) no-repeat;
+        background-size: 100%;
+        padding:;
+    }
+
+        /*Màu nền background*/
+        .airfare-footer > footer > .opacity {
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(48, 79, 254, .88);
+        }
+
+        /*Nội dung footer*/
+        .airfare-footer > footer > .info {
+            height: 1%;
+            overflow: hidden;
+            padding: 3em 0;
+        }
+
+            /*Chung cho Menu - Về chúng tôi - Quản lý đặt hàng*/
+            .airfare-footer > footer > .info > .list {
+                padding: 0;
+            }
+
+                .airfare-footer > footer > .info > .list > ul {
+                    list-style: none;
+                    padding: 0 0 0 1em;
+                }
+
+                    .airfare-footer > footer > .info > .list > ul > .logo {
+                    }
+
+                        .airfare-footer > footer > .info > .list > ul > .logo > img {
+                            width: 100%;
+                        }
+
+                    .airfare-footer > footer > .info > .list > ul > .title {
+                        font-weight: bold;
+                    }
+
+                    .airfare-footer > footer > .info > .list > ul > li {
+                        color: rgb(255, 255, 255);
+                    }
+
+                        .airfare-footer > footer > .info > .list > ul > li > a {
+                            text-decoration: none;
+                            color: rgb(255, 255, 255);
+                        }
+
+                            .airfare-footer > footer > .info > .list > ul > li > a:hover {
+                                color: yellow;
+                            }
+
+            /*Đăng ký nhận khuyến mại và thông tin liên hệ*/
+            .airfare-footer > footer > .info > .sign-in-contact {
+                height: 1%;
+                overflow: hidden;
+            }
+
+                /*Đăng ký nhận khuyến mại*/
+                .airfare-footer > footer > .info > .sign-in-contact > .sign-in {
+                    padding: 0;
+                }
+
+                    .airfare-footer > footer > .info > .sign-in-contact > .sign-in > p {
+                        font-size: 1.5em;
+                        color: rgb(255, 255, 255);
+                        margin: 0;
+                    }
+
+                    .airfare-footer > footer > .info > .sign-in-contact > .sign-in > form {
+                        height: 1%;
+                        overflow: hidden;
+                    }
+
+                        .airfare-footer > footer > .info > .sign-in-contact > .sign-in > form > input {
+                            display: block;
+                            border: none;
+                            width: 65%;
+                            padding: 0.6em 0 0.3em 0;
+                            border-bottom: solid 1px rgb(26, 188, 156);
+                            -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+                            transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+                            background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, rgb(26, 188, 156) 4%);
+                            background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, rgb(26, 188, 156) 4%);
+                            background-position: -20em 0;
+                            background-size: 100% 100%;
+                            background-repeat: no-repeat;
+                            color: rgb(255, 255, 255);
+                            float: left;
+                        }
+
+                            .airfare-footer > footer > .info > .sign-in-contact > .sign-in > form > input:focus {
+                                box-shadow: none;
+                                outline: none;
+                                background-position: 0 0;
+                            }
+
+                        .airfare-footer > footer > .info > .sign-in-contact > .sign-in > form > button {
+                            border: none;
+                            background: rgb(26, 188, 156);
+                            cursor: pointer;
+                            border-radius: 3px;
+                            padding: 0.5em;
+                            width: 30%;
+                            margin: 0.3em 0 0 1em;
+                            color: rgb(255, 255, 255);
+                            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+                            transition: all 0.3s ease-in-out;
+                        }
+
+                            .airfare-footer > footer > .info > .sign-in-contact > .sign-in > form > button:hover {
+                                -webkit-transform: translateY(-3px);
+                                transform: translateY(-3px);
+                                box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+                            }
+
+                    /*Mạng xã hội*/
+                    .airfare-footer > footer > .info > .sign-in-contact > .sign-in > .social {
+                        width: 100%;
+                        margin: 1em auto;
+                        text-align: center;
+                    }
+
+                        .airfare-footer > footer > .info > .sign-in-contact > .sign-in > .social > a {
+                            text-decoration: none;
+                            margin: 0 0.5em;
+                        }
+
+                            .airfare-footer > footer > .info > .sign-in-contact > .sign-in > .social > a > i {
+                                font-size: 2em;
+                                color: rgb(255, 255, 255);
+                            }
+
+                /* Thông tin liên hệ*/
+                .airfare-footer > footer > .info > .sign-in-contact > .contact {
+                    height: 1%;
+                    overflow: hidden;
+                    padding: 0 0 0 1em;
+                }
+
+                    .airfare-footer > footer > .info > .sign-in-contact > .contact > img {
+                        padding: 0;
+                    }
+
+                    .airfare-footer > footer > .info > .sign-in-contact > .contact > .text {
+                        color: rgb(255, 255, 255);
+                        padding: 0;
+                    }
+
+                        .airfare-footer > footer > .info > .sign-in-contact > .contact > .text > .co-name {
+                            font-size: 1.3em;
+                            font-weight: bold;
+                            margin: 0;
+                        }
+
+                        .airfare-footer > footer > .info > .sign-in-contact > .contact > .text > .detail {
+                            padding: 0 0 0 1em;
+                        }
+
+/*Giao diện cho màn hình lớn*/
+@media (min-width: 1400px) {
+}
+
+/*Giao diện cho tablet (ngang)*/
+@media (min-width: 992px) and (max-width: 1024px) {
+    /*Menu và quảng cáo 2 bên*/
+    .ads-menu {
+    }
+
+        /*Menu*/
+        .ads-menu > header {
+            margin: 0;
+            width: 100%;
+        }
+
+        /*Quảng cáo bên trái*/
+        .ads-menu > .ads-left {
+            position: static;
+            display: none !important;
+        }
+
+        /*Quảng cáo bên phải*/
+        .ads-menu > .ads-right {
+            position: static;
+            display: none !important;
+        }
+
+    /*Danh sách vé máy bay và footer*/
+    .airfare-footer {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+/*Giao diện cho tablet (dọc)*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .fixed {
+        height: 80px;
+    }
+
+    header {
+        position: static;
+    }
+
+        header > .mobile {
+            padding: 0;
+        }
+
+    .dl-menuwrapper {
+        width: 100%;
+        height: 80px;
+        float: left;
+        position: relative;
+        -webkit-perspective: 1000px;
+        perspective: 1000px;
+        -webkit-perspective-origin: 50% 200%;
+        perspective-origin: 50% 200%;
+        box-shadow: 0 3px 3px rgba(132,136,138,.1);
+        background: rgb(255, 255, 255);
+        border-bottom: solid 5px rgb(61, 90, 254);
+        z-index: 2000;
+        margin: 0 0 3em 0;
+    }
+
+        .dl-menuwrapper:first-child {
+            margin-right: 0;
+        }
+
+        .dl-menuwrapper div {
+            width: 84%;
+            float: right;
+            margin: 0 0 11px 0;
+        }
+
+            .dl-menuwrapper div .logo {
+                width: 80%;
+                display: block;
+                text-align: center;
+                float: left;
+            }
+
+                .dl-menuwrapper div .logo img {
+                    width: 15em;
+                    padding: 0.5em 0em 0em 0em;
+                }
+
+            .dl-menuwrapper div .search {
+                position: absolute;
+                width: 10%;
+                height: 100%;
+                right: 0.5em;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                background-position-y: 1em;
+            }
+
+                .dl-menuwrapper div .search > i {
+                    color: rgb(61, 90, 254);
+                    font-size: 3em;
+                    margin-top: 0.35em;
+                }
+
+                .dl-menuwrapper div .search:before {
+                    border-left: 1px solid rgba(61, 90, 254, .4);
+                    content: "";
+                    height: 70%;
+                    position: absolute;
+                    top: 15%;
+                    left: -1em;
+                    width: 0;
+                }
+
+    .search-box {
+        z-index: 20;
+        font-size: 1.5em;
+        width: 100%;
+        top: 80px;
+        display: none;
+        border: none;
+        padding: 0.6em 1em;
+        border-bottom: solid 2px rgb(61, 90, 254);
+        float: left;
+    }
+
+    .dl-menuwrapper button {
+        background: rgb(255, 255, 255);
+        border: none;
+        width: 10%;
+        height: 70%;
+        text-indent: -900em;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        outline: none;
+        border-right: 1px solid rgba(61, 90, 254, .4);
+        top: 20%;
+    }
+
+        .dl-menuwrapper button:hover,
+        .dl-menuwrapper button.dl-active,
+        .dl-menuwrapper ul {
+            background: rgb(255, 255, 255);
+        }
+
+        .dl-menuwrapper button:after {
+            content: '';
+            position: absolute;
+            width: 70%;
+            height: 10%;
+            background: rgb(61, 90, 254);
+            top: 16%;
+            left: 15%;
+            box-shadow: 0 15px 0 rgb(61, 90, 254), 0 30px 0 rgb(61, 90, 254);
+        }
+
+    .dl-menuwrapper ul {
+        padding: 0;
+        list-style: none;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        background: rgb(61, 90, 254);
+    }
+
+    .dl-menuwrapper li {
+        position: relative;
+    }
+
+        .dl-menuwrapper li a {
+            display: block;
+            position: relative;
+            padding: 1em 1.5em;
+            font-size: 2em;
+            line-height: 20px;
+            font-weight: 300;
+            color: #fff;
+            outline: none;
+            text-decoration: none;
+        }
+
+        .dl-menuwrapper li.dl-back > a {
+            padding-left: 50px;
+            background: rgba(0,0,0,0.1);
+        }
+
+        .dl-menuwrapper li.dl-back:after,
+        .dl-menuwrapper li > a:not(:only-child):after {
+            position: absolute;
+            top: 0;
+            line-height: 50px;
+            font-family: 'icomoon';
+            speak: none;
+            -webkit-font-smoothing: antialiased;
+            content: "\e000";
+        }
+
+        .dl-menuwrapper li.dl-back:after {
+            left: 15px;
+            color: rgba(212,204,198,0.3);
+            -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+            font-size: 1.5em;
+            margin: 0.5em 0em 0em 0em;
+        }
+
+        .dl-menuwrapper li > a:after {
+            right: 10px;
+            color: rgba(255,255, 255, .3);
+            margin: 0.5em 0em 0em 0em;
+        }
+
+    .dl-menuwrapper .dl-menu {
+        margin: 1.6em 0 0 0;
+        position: absolute;
+        width: 100%;
+        opacity: 0;
+        pointer-events: none;
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+        .dl-menuwrapper .dl-menu.dl-menu-toggle {
+            transition: all 0.3s ease;
+        }
+
+        .dl-menuwrapper .dl-menu.dl-menuopen {
+            opacity: 1;
+            pointer-events: auto;
+            -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+        }
+
+    /* Hide the inner submenus */
+    .dl-menuwrapper li .dl-submenu {
+        display: none;
+    }
+
+    /* 
+When a submenu is openend, we will hide all li siblings.
+For that we give a class to the parent menu called "dl-subview".
+We also hide the submenu link. 
+The opened submenu will get the class "dl-subviewopen".
+All this is done for any sub-level being entered.
+*/
+    .dl-menu.dl-subview li,
+    .dl-menu.dl-subview li.dl-subviewopen > a,
+    .dl-menu.dl-subview li.dl-subview > a {
+        display: none;
+    }
+
+        .dl-menu.dl-subview li.dl-subview,
+        .dl-menu.dl-subview li.dl-subview .dl-submenu,
+        .dl-menu.dl-subview li.dl-subviewopen,
+        .dl-menu.dl-subview li.dl-subviewopen > .dl-submenu,
+        .dl-menu.dl-subview li.dl-subviewopen > .dl-submenu > li {
+            display: block;
+        }
+
+    /* Dynamically added submenu outside of the menu context */
+    .dl-menuwrapper > .dl-submenu {
+        position: absolute;
+        width: 100%;
+        top: 78px;
+        left: 0;
+        margin: 0;
+    }
+
+    /* Animation classes for moving out and in */
+
+    .dl-menu.dl-animate-out-5 {
+        -webkit-animation: MenuAnimOut5 0.4s ease;
+        animation: MenuAnimOut5 0.4s ease;
+    }
+
+    @-webkit-keyframes MenuAnimOut5 {
+        0% {
+        }
+
+        100% {
+            -webkit-transform: translateY(40%);
+            opacity: 0;
+        }
+    }
+
+    @keyframes MenuAnimOut5 {
+        0% {
+        }
+
+        100% {
+            -webkit-transform: translateY(40%);
+            transform: translateY(40%);
+            opacity: 0;
+        }
+    }
+
+    .dl-menu.dl-animate-in-5 {
+        -webkit-animation: MenuAnimIn5 0.4s ease;
+        animation: MenuAnimIn5 0.4s ease;
+    }
+
+    @-webkit-keyframes MenuAnimIn5 {
+        0% {
+            -webkit-transform: translateY(40%);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes MenuAnimIn5 {
+        0% {
+            -webkit-transform: translateY(40%);
+            transform: translateY(40%);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    .dl-menuwrapper > .dl-submenu.dl-animate-in-5 {
+        -webkit-animation: SubMenuAnimIn5 0.4s ease;
+        animation: SubMenuAnimIn5 0.4s ease;
+    }
+
+    @-webkit-keyframes SubMenuAnimIn5 {
+        0% {
+            -webkit-transform: translateZ(-200px);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-transform: translateZ(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes SubMenuAnimIn5 {
+        0% {
+            -webkit-transform: translateZ(-200px);
+            transform: translateZ(-200px);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            opacity: 1;
+        }
+    }
+
+    .dl-menuwrapper > .dl-submenu.dl-animate-out-5 {
+        -webkit-animation: SubMenuAnimOut5 0.4s ease;
+        animation: SubMenuAnimOut5 0.4s ease;
+    }
+
+    @-webkit-keyframes SubMenuAnimOut5 {
+        0% {
+            -webkit-transform: translateZ(0);
+            opacity: 1;
+        }
+
+        100% {
+            -webkit-transform: translateZ(-200px);
+            opacity: 0;
+        }
+    }
+
+
+    @keyframes SubMenuAnimOut5 {
+        0% {
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            opacity: 1;
+        }
+
+        100% {
+            -webkit-transform: translateZ(-200px);
+            transform: translateZ(-200px);
+            opacity: 0;
+        }
+    }
+
+    /* No JS Fallback */
+    .no-js .dl-menuwrapper .dl-menu {
+        position: relative;
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+
+    .no-js .dl-menuwrapper li .dl-submenu {
+        display: block;
+    }
+
+    .no-js .dl-menuwrapper li.dl-back {
+        display: none;
+    }
+
+    .no-js .dl-menuwrapper li > a:not(:only-child) {
+        background: rgba(0,0,0,0.1);
+    }
+
+        .no-js .dl-menuwrapper li > a:not(:only-child):after {
+            content: '';
+        }
+
+    /*Danh sách vé máy bay và footer*/
+    .airfare-footer {
+        padding: 2em 0 0 0;
+    }
+
+        /*Danh sách vé máy bay*/
+        .airfare-footer > .list-airfare > ul {
+            padding: 0 0 0 7em;
+            margin: 0 0 2em 0;
+        }
+
+            .airfare-footer > .list-airfare > ul > .title {
+                font-size: 1.3em;
+                font-weight: bold;
+                color: rgb(61, 90, 254);
+            }
+
+            .airfare-footer > .list-airfare > ul > li {
+            }
+
+                .airfare-footer > .list-airfare > ul > li > a {
+                    font-size: 1.1em;
+                    color: rgb(0, 0, 0);
+                }
+
+        /*Footer*/
+
+        .airfare-footer > footer > .info > .list > ul > .title {
+            font-size: 1.3em;
+        }
+
+        .airfare-footer > footer > .info > .list > ul > li > a {
+            font-size: 1.1em;
+        }
+
+        /*Đăng ký nhận khuyến mại và thông tin liên hệ*/
+        .airfare-footer > footer > .info > .sign-in-contact > .sign-in > form {
+            padding: 0 0 0 1em;
+        }
+
+            .airfare-footer > footer > .info > .sign-in-contact > .sign-in > form > input {
+                width: 65%;
+                float: left;
+            }
+
+            .airfare-footer > footer > .info > .sign-in-contact > .sign-in > form > button {
+                width: 30%;
+            }
+
+        /*Mạng xã hội*/
+        .airfare-footer > footer > .info > .sign-in-contact > .sign-in > .social {
+            width: 100%;
+            text-align: left;
+        }
+
+        /* Thông tin liên hệ*/
+        .airfare-footer > footer > .info > .sign-in-contact > .contact > img {
+            height: 8em;
+        }
+
+        .airfare-footer > footer > .info > .sign-in-contact > .contact > .text > .co-name {
+            font-size: 1.5em;
+        }
+
+        .airfare-footer > footer > .info > .sign-in-contact > .contact > .text > .detail {
+            font-size: 1.1em;
+        }
+}
+
+/*Giao diện cho điện thoại*/
+@media (max-width: 767px) {
+    .fixed {
+        height: 50px;
+    }
+
+    header {
+        position: static;
+        z-index: 99;
+    }
+
+        header > .mobile {
+            padding: 0;
+        }
+
+    .dl-menuwrapper {
+        width: 100%;
+        height: 50px;
+        float: left;
+        position: relative;
+        -webkit-perspective: 1000px;
+        perspective: 1000px;
+        -webkit-perspective-origin: 50% 200%;
+        perspective-origin: 50% 200%;
+        box-shadow: 0 3px 3px rgba(132,136,138,.1);
+        background: rgb(255, 255, 255);
+        border-bottom: solid 2px rgb(61, 90, 254);
+        z-index: 2000;
+        margin: 0;
+    }
+
+        .dl-menuwrapper:first-child {
+            margin-right: 0;
+        }
+
+        .dl-menuwrapper div {
+            width: 84%;
+            float: right;
+            margin: 0 0 6px 0;
+        }
+
+            .dl-menuwrapper div .logo {
+                width: 80%;
+                display: block;
+                text-align: center;
+                float: left;
+            }
+
+                .dl-menuwrapper div .logo img {
+                    width: 10em;
+                    padding: 0.3em 0em 0em 0em;
+                }
+
+            .dl-menuwrapper div .search {
+                position: absolute;
+                width: 10%;
+                height: 100%;
+                right: 0.5em;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                background-position-y: 1em;
+            }
+
+                .dl-menuwrapper div .search > i {
+                    color: rgb(61, 90, 254);
+                    font-size: 2em;
+                    margin-top: 0.35em;
+                }
+
+                .dl-menuwrapper div .search:before {
+                    border-left: 1px solid rgba(61, 90, 254, .3);
+                    content: "";
+                    height: 70%;
+                    position: absolute;
+                    top: 15%;
+                    left: -0.5em;
+                    width: 0;
+                }
+
+    .search-box {
+        z-index: 20;
+        font-size: 1.2em;
+        width: 100%;
+        top: 50px;
+        display: none;
+        border: none;
+        padding: 0.6em 1em;
+        border-bottom: solid 2px rgb(61, 90, 254);
+        float: left;
+    }
+
+    .dl-menuwrapper button {
+        background: rgb(255, 255, 255);
+        border: none;
+        width: 16%;
+        height: 70%;
+        text-indent: -900em;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        outline: none;
+        border-right: 1px solid rgba(61, 90, 254, .3);
+        top: 15%;
+    }
+
+        .dl-menuwrapper button:hover,
+        .dl-menuwrapper button.dl-active,
+        .dl-menuwrapper ul {
+            background: rgb(255, 255, 255);
+        }
+
+        .dl-menuwrapper button:after {
+            content: '';
+            position: absolute;
+            width: 70%;
+            height: 10%;
+            background: rgb(61, 90, 254);
+            top: 15%;
+            left: 15%;
+            box-shadow: 0 10px 0 rgb(61, 90, 254), 0 20px 0 rgb(61, 90, 254);
+        }
+
+    .dl-menuwrapper ul {
+        padding: 0;
+        list-style: none;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        background: rgb(61, 90, 254);
+    }
+
+    .dl-menuwrapper li {
+        position: relative;
+    }
+
+        .dl-menuwrapper li a {
+            display: block;
+            position: relative;
+            padding: 15px 20px;
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 300;
+            color: #fff;
+            outline: none;
+            text-decoration: none;
+        }
+
+        .dl-menuwrapper li.dl-back > a {
+            padding-left: 30px;
+            background: rgba(0,0,0,0.1);
+        }
+
+        .dl-menuwrapper li.dl-back:after,
+        .dl-menuwrapper li > a:not(:only-child):after {
+            position: absolute;
+            top: 0;
+            line-height: 50px;
+            font-family: 'icomoon';
+            speak: none;
+            -webkit-font-smoothing: antialiased;
+            content: "\e000";
+        }
+
+        .dl-menuwrapper li.dl-back:after {
+            left: 10px;
+            color: rgba(212,204,198,0.3);
+            -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+        }
+
+        .dl-menuwrapper li > a:after {
+            right: 10px;
+            color: rgba(255,255, 255, .3);
+        }
+
+    .dl-menuwrapper .dl-menu {
+        margin: 1.1em 0 0 0;
+        position: absolute;
+        width: 100%;
+        opacity: 0;
+        pointer-events: none;
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+        .dl-menuwrapper .dl-menu.dl-menu-toggle {
+            transition: all 0.3s ease;
+        }
+
+        .dl-menuwrapper .dl-menu.dl-menuopen {
+            opacity: 1;
+            pointer-events: auto;
+            -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+        }
+
+    /* Hide the inner submenus */
+    .dl-menuwrapper li .dl-submenu {
+        display: none;
+    }
+
+    /* 
+When a submenu is openend, we will hide all li siblings.
+For that we give a class to the parent menu called "dl-subview".
+We also hide the submenu link. 
+The opened submenu will get the class "dl-subviewopen".
+All this is done for any sub-level being entered.
+*/
+    .dl-menu.dl-subview li,
+    .dl-menu.dl-subview li.dl-subviewopen > a,
+    .dl-menu.dl-subview li.dl-subview > a {
+        display: none;
+    }
+
+        .dl-menu.dl-subview li.dl-subview,
+        .dl-menu.dl-subview li.dl-subview .dl-submenu,
+        .dl-menu.dl-subview li.dl-subviewopen,
+        .dl-menu.dl-subview li.dl-subviewopen > .dl-submenu,
+        .dl-menu.dl-subview li.dl-subviewopen > .dl-submenu > li {
+            display: block;
+        }
+
+    /* Dynamically added submenu outside of the menu context */
+    .dl-menuwrapper > .dl-submenu {
+        position: absolute;
+        width: 100%;
+        top: 50px;
+        left: 0;
+        margin: 0;
+    }
+
+    /* Animation classes for moving out and in */
+
+    .dl-menu.dl-animate-out-5 {
+        -webkit-animation: MenuAnimOut5 0.4s ease;
+        animation: MenuAnimOut5 0.4s ease;
+    }
+
+    @-webkit-keyframes MenuAnimOut5 {
+        0% {
+        }
+
+        100% {
+            -webkit-transform: translateY(40%);
+            opacity: 0;
+        }
+    }
+
+    @keyframes MenuAnimOut5 {
+        0% {
+        }
+
+        100% {
+            -webkit-transform: translateY(40%);
+            transform: translateY(40%);
+            opacity: 0;
+        }
+    }
+
+    .dl-menu.dl-animate-in-5 {
+        -webkit-animation: MenuAnimIn5 0.4s ease;
+        animation: MenuAnimIn5 0.4s ease;
+    }
+
+    @-webkit-keyframes MenuAnimIn5 {
+        0% {
+            -webkit-transform: translateY(40%);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes MenuAnimIn5 {
+        0% {
+            -webkit-transform: translateY(40%);
+            transform: translateY(40%);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    .dl-menuwrapper > .dl-submenu.dl-animate-in-5 {
+        -webkit-animation: SubMenuAnimIn5 0.4s ease;
+        animation: SubMenuAnimIn5 0.4s ease;
+    }
+
+    @-webkit-keyframes SubMenuAnimIn5 {
+        0% {
+            -webkit-transform: translateZ(-200px);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-transform: translateZ(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes SubMenuAnimIn5 {
+        0% {
+            -webkit-transform: translateZ(-200px);
+            transform: translateZ(-200px);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            opacity: 1;
+        }
+    }
+
+    .dl-menuwrapper > .dl-submenu.dl-animate-out-5 {
+        -webkit-animation: SubMenuAnimOut5 0.4s ease;
+        animation: SubMenuAnimOut5 0.4s ease;
+    }
+
+    @-webkit-keyframes SubMenuAnimOut5 {
+        0% {
+            -webkit-transform: translateZ(0);
+            opacity: 1;
+        }
+
+        100% {
+            -webkit-transform: translateZ(-200px);
+            opacity: 0;
+        }
+    }
+
+
+    @keyframes SubMenuAnimOut5 {
+        0% {
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            opacity: 1;
+        }
+
+        100% {
+            -webkit-transform: translateZ(-200px);
+            transform: translateZ(-200px);
+            opacity: 0;
+        }
+    }
+
+    /* No JS Fallback */
+    .no-js .dl-menuwrapper .dl-menu {
+        position: relative;
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+
+    .no-js .dl-menuwrapper li .dl-submenu {
+        display: block;
+    }
+
+    .no-js .dl-menuwrapper li.dl-back {
+        display: none;
+    }
+
+    .no-js .dl-menuwrapper li > a:not(:only-child) {
+        background: rgba(0,0,0,0.1);
+    }
+
+        .no-js .dl-menuwrapper li > a:not(:only-child):after {
+            content: '';
+        }
+
+    /*Danh sách vé máy bay và footer*/
+    .airfare-footer {
+    }
+
+        /*Danh sách vé máy bay*/
+        .airfare-footer > .list-airfare > ul {
+            padding: 0 0 0 4em;
+        }
+
+            .airfare-footer > .list-airfare > ul > .title {
+                font-size: 1.3em;
+                color: rgb(61,90,254);
+                font-weight: bold;
+            }
+
+            .airfare-footer > .list-airfare > ul > li > a {
+                color: rgb(0, 0, 0);
+                font-size: 1.1em;
+            }
+
+        .airfare-footer > footer > .info > .list > ul > .logo > img {
+            width: 90%;
+        }
+
+        .airfare-footer > footer > .info > .list > ul > .title {
+            font-size: 1.2em;
+        }
+
+        /*Đăng ký nhận khuyến mại và thông tin liên hệ*/
+        .airfare-footer > footer > .info > .sign-in-contact {
+            height: 1%;
+            overflow: hidden;
+            padding: 0;
+        }
+
+            /*Đăng ký nhận khuyến mại*/
+            .airfare-footer > footer > .info > .sign-in-contact > .sign-in {
+                padding: 0;
+                margin: 2em 0;
+            }
+
+                .airfare-footer > footer > .info > .sign-in-contact > .sign-in > p {
+                    font-size: 1.4em;
+                }
+            /* Thông tin liên hệ*/
+            .airfare-footer > footer > .info > .sign-in-contact > .contact > img {
+                padding: 0;
+            }
+
+            .airfare-footer > footer > .info > .sign-in-contact > .contact > .text > .co-name {
+                font-size: 1.5em;
+            }
+
+            .airfare-footer > footer > .info > .sign-in-contact > .contact > .text > .detail {
+                line-height: 1.7em;
+            }
+}

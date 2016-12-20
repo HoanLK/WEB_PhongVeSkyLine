@@ -1,0 +1,44 @@
+﻿@model CMS.Models.Category
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!--Trang tin tức-->
+<section class="tintuc col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+
+    <!--Danh sách bài viết-->
+    <article class="danhsachbaiviet col-xs-12 col-sm-12 col-md-8 col-lg-8" ng-controller="categoryPostController">
+        <input type="hidden" value="@Model.idCategory" id="idCategory" />
+        <!--Số trang-->
+        <dir-pagination-controls class="Page navigation"></dir-pagination-controls>
+        <span us-spinner="{radius:15, width:4, length: 8}"></span>
+        <!--Danh sách-->
+        <article class="list col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+            <!--Từng bài viết-->
+            <p ng-hide="posts.length > 0" style="text-align:center; font-size:2em; color:#0c7b07">Chưa có bài viết nào</p>
+            <div class="topic col-xs-12 col-sm-12 col-md-12 col-lg-12" dir-paginate="(index, value) in posts | itemsPerPage:8" ng-show="posts.length > 0">
+                <img ng-src="{{value.image}}" alt="{{value.title}}" class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left img-responsive" />
+                <div class="info col-xs-12 col-sm-8 col-md-8 col-lg-8 pull-right">
+                    <a href="/bai-viet/{{value.alias}}-{{value.idPost}}" class="title col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        {{value.title}}
+                    </a>
+                    <p class="ngaydang col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        Ngày 15 tháng 11 năm 2016
+                    </p>
+                    <p class="detail col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+                        {{value.description}}
+                    </p>
+                </div>
+            </div>
+
+        </article>
+
+        <!--Số trang-->
+        <dir-pagination-controls class="Page navigation"></dir-pagination-controls>
+
+    </article>
+
+    <!--Tìm kiếm chuyến bay - Tin Khuyến Mại-->
+    @Html.Partial("_KM")
+</section>

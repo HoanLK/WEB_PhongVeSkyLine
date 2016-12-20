@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewBag.Title = "Giới thiệu";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="gioithieu col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+
+    <!--Bài viết-->
+    <article class="baiviet col-xs-12 col-sm-12 col-md-8 col-lg-8">
+
+        <!--Ảnh trong bài-->
+        <img src="~/Content/Front/images/anhbaiviet/gioithieu-1.png" alt="" class="img-responsive" />
+
+        <!--Phần nội dung-->
+        <p class="content">
+            SKYLINE là công ty hoạt động trong lĩnh vực thương mại điện tử – chuyên cung cấp dịch vụ vé máy bay trực tuyến của các hãng hàng không nội địa và quốc tế.
+            SKYLINE có hệ thống Đặt Vé Máy Bay Trực Tuyến tại website phongvemaybayskyline.com với các chức năng:
+            Tìm kiếm hành trình bay,
+            so sánh giá vé của các hãng hàng không,
+            đặt vé trên website và Thanh toán trực tuyến.
+        </p>
+        <p class="content">
+            Chúng tôi cung cấp dịch vụ máy bay giá rẻ trong nước và quốc tế. Cung cấp dịch vụ xe ô tô du lịch và xe đưa đón sân bay với chất lượng hoàn hảo nhất.
+        </p>
+        <p class="content">
+            Hiện nay phongveskyline.com đang là website đặt vé máy bay trực tuyến hàng đầu tại Hải Phòng,
+            đồng thời cũng là tổng đại lý phân phối vé máy bay chính thức cho các hãng hàng không trên toàn quốc.
+        </p>
+        <ul>
+            <li>Cung cấp vé máy bay giá rẻ trong nước và quốc tế</li>
+            <li>Đón tiễn sân bay</li>
+            <li>Hỗ trợ đặt phòng khách sạn toàn quốc.</li>
+            <li>Tổ chức tour du lịch trong và ngoài nước.</li>
+            <li>Đại lý Độc quyền Tour Hàn Quốc tại Hải Phòng.</li>
+        </ul>
+
+        <!--Ảnh trong bài-->
+        <img src="~/Content/Front/images/anhbaiviet/gioithieu-2.png" alt="" class="img-responsive" />
+
+        <!--Thông tin công ty-->
+        <p class="info">
+            <span class="bold uppercase">PHÒNG VÉ SKYLINE</span><br />
+            <span class="bold">Địa chỉ: </span>Số 1 lô 22 Lê Hồng Phong, Cát Bi, Hải Phòng. <br />
+            <span class="bold">Điện thoại: </span>0313.611.158 <br />
+            <span class="red">
+                <span class="bold">Hotline:</span> 0906.028211 / 0981.200288
+            </span>
+        </p>
+    </article>
+
+    <!--Tìm kiếm chuyến bay - Tin Khuyến Mại-->
+    @Html.Partial("_KM")
+</section>
