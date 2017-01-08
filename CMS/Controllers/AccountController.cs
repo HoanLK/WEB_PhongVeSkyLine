@@ -164,7 +164,7 @@ namespace CMS.Controllers
         {
             if (WebSecurity.IsAuthenticated == true)
             {
-                return RedirectToAction("Index", "BaiViet", new { Area = "Admin" });
+                return RedirectToAction("Index", "Posts", new { Area = "Admin" });
             }
 
             return View();
@@ -185,7 +185,7 @@ namespace CMS.Controllers
                     }
                     else
                     {
-                        return RedirectToAction("Index", "BaiViet", new { Area = "Admin" });
+                        return RedirectToAction("Index", "Posts", new { Area = "Admin" });
                     }
                 }
                 else

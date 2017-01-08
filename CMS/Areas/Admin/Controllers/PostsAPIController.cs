@@ -36,6 +36,22 @@ namespace CMS.Areas.Admin.Controllers
             return Ok(post);
         }
 
+        //GET: API/PostsAPI?att=...&&value=...
+        public IQueryable<Post> GetPost(string att, string value)
+        {
+            var post = db.Post;
+
+            if (att == "idCategory" && att != null && value != null)
+            {
+                int idCategory = int.Parse(value);
+                var model = db.Post.Where(p => p.idCategory == idCategory && p.published == 1).OrderByDescending(p => p.timeModified);
+
+                return model;
+            }
+
+            return post;
+        }
+
         // PUT: api/PostsAPI/5
         [ResponseType(typeof(void))]
         public async Task<IHttpActionResult> PutPost(int id, Post post)

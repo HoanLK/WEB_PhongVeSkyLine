@@ -213,6 +213,7 @@
     <Compile Include="Areas\Admin\Controllers\VideoAPIController.cs" />
     <Compile Include="Areas\Admin\Controllers\VideosController.cs" />
     <Compile Include="Controllers\DanhMucSanPhamController.cs" />
+    <Compile Include="Controllers\KetQuaController.cs" />
     <Compile Include="Controllers\SanPhamController.cs" />
     <Compile Include="Controllers\BaiVietController.cs" />
     <Compile Include="Controllers\DanhMucBaiVietController.cs" />
@@ -2883,6 +2884,8 @@
     <Content Include="Views\Home\VeQuocTe.cshtml" />
     <Content Include="Views\Home\LienHe.cshtml" />
     <None Include="Properties\PublishProfiles\Host.pubxml" />
+    <Content Include="Views\KetQua\TrongNuoc.cshtml" />
+    <Content Include="Views\KetQua\QuocTe.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />

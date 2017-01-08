@@ -76,11 +76,11 @@
                     <a href="@Url.Action("Index","Home")" class="logo pull-left">
                         <img src="~/Content/Front/images/logo.png" alt="" />
                     </a>
-                    <a href="tel:0981200288" class="hotline pull-right">
+                    <a href="tel:0906028211" class="hotline pull-right">
                         <i class="fa fa-phone"></i>
                         <p>
                             Hotline đặt vé<br />
-                            <span>0981 20 0288</span>
+                            <span>0906 0282 11</span>
                         </p>
                     </a>
                 </div>
@@ -145,7 +145,7 @@
                     <a href="tel:09812002888" class="col-sm-12 col-md-12 col-lg-12">
                         <p><i class="fa fa-user"></i>Hotline</p>
                         <p class="number">
-                            0981 20 0288
+                            0906 0282 11
                         </p>
                     </a>
                 </div>
@@ -168,94 +168,121 @@
 
     @RenderBody()
 
+    <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10 top" ng-controller="categoryPostController">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 item">
+            <a href="/bai-viet/ve-may-bay-quoc-te-5" class="tieuDe">Vé máy bay quốc tế</a>
+            <ul class="list">
+                <li ng-repeat="(index, value) in veQuocTes"><a href="/bai-viet/{{value.alias}}-{{value.idPost}}">{{value.title}}</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 item">
+            <a href="/bai-viet/ve-may-bay-noi-dia-6" class="tieuDe">Vé máy bay nội địa</a>
+            <ul class="list">
+                <li ng-repeat="(index, value) in veNoiDias"><a href="/bai-viet/{{value.alias}}-{{value.idPost}}">{{value.title}}</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 item">
+            <a href="/bai-viet/ve-may-bay-theo-hang-7" class="tieuDe">Vé máy bay theo hãng</a>
+            <ul class="list">
+                <li ng-repeat="(index, value) in veTheoHangs"><a href="/bai-viet/{{value.alias}}-{{value.idPost}}">{{value.title}}</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 item">
+            <a href="/bai-viet/ve-may-bay-theo-loai-8" class="tieuDe">Vé máy bay theo loại</a>
+            <ul class="list">
+                <li ng-repeat="(index, value) in veTheoLoais"><a href="/bai-viet/{{value.alias}}-{{value.idPost}}">{{value.title}}</a></li>
+            </ul>
+        </div>
+    </div>
+
     <div class="airfare-footer col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
 
         <!--Danh sách vé máy bay-->
         @*<div class="list-airfare col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
-            <!--Vé máy bay quốc tế-->
-            <ul class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                <li class="title">Vé máy bay Quốc tế</li>
-                <li><a href="#">Vé máy bay đi Mỹ</a></li>
-                <li><a href="#">Vé máy bay đi Singapore</a></li>
-                <li><a href="#">Vé máy bay đi Thái Lan</a></li>
-                <li><a href="#">Vé máy bay đi Nhật Bản</a></li>
-                <li><a href="#">Vé máy bay đi Úc</a></li>
-                <li><a href="#">Vé máy bay đi Hàn Quốc</a></li>
-                <li><a href="#">Vé máy bay đi Đức</a></li>
-                <li><a href="#">Vé máy bay đi Pháp</a></li>
-                <li><a href="#">Vé máy bay đi Anh</a></li>
-                <li><a href="#">Vé máy bay đi Hồng Kông</a></li>
-                <li><a href="#">Vé máy bay đi Trung Quốc</a></li>
-                <li><a href="#">Vé máy bay đi Canada</a></li>
-                <li><a href="#">Vé máy bay đi Đài Loan</a></li>
-                <li><a href="#">Vé máy bay đi Campuchia</a></li>
-                <li><a href="#">Vé máy bay đi Nga</a></li>
-                <li><a href="#">Vé máy bay đi Hà Lan</a></li>
-                <li><a href="#">Vé máy bay đi Myanmar</a></li>
-                <li><a href="#">Vé máy bay đi New Zealand</a></li>
-                <li><a href="#">Vé máy bay đi Italia</a></li>
-                <li><a href="#">Vé máy bay đi Malaysia</a></li>
-                <li><a href="#">Vé máy bay đi Tây Ban Nha</a></li>
-                <li><a href="#">Vé máy bay đi Lào</a></li>
-                <li><a href="#">Vé máy bay đi Indonesia</a></li>
-                <li><a href="#">Vé máy bay đi quốc tế</a></li>
-            </ul>
+                <!--Vé máy bay quốc tế-->
+                <ul class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <li class="title">Vé máy bay Quốc tế</li>
+                    <li><a href="#">Vé máy bay đi Mỹ</a></li>
+                    <li><a href="#">Vé máy bay đi Singapore</a></li>
+                    <li><a href="#">Vé máy bay đi Thái Lan</a></li>
+                    <li><a href="#">Vé máy bay đi Nhật Bản</a></li>
+                    <li><a href="#">Vé máy bay đi Úc</a></li>
+                    <li><a href="#">Vé máy bay đi Hàn Quốc</a></li>
+                    <li><a href="#">Vé máy bay đi Đức</a></li>
+                    <li><a href="#">Vé máy bay đi Pháp</a></li>
+                    <li><a href="#">Vé máy bay đi Anh</a></li>
+                    <li><a href="#">Vé máy bay đi Hồng Kông</a></li>
+                    <li><a href="#">Vé máy bay đi Trung Quốc</a></li>
+                    <li><a href="#">Vé máy bay đi Canada</a></li>
+                    <li><a href="#">Vé máy bay đi Đài Loan</a></li>
+                    <li><a href="#">Vé máy bay đi Campuchia</a></li>
+                    <li><a href="#">Vé máy bay đi Nga</a></li>
+                    <li><a href="#">Vé máy bay đi Hà Lan</a></li>
+                    <li><a href="#">Vé máy bay đi Myanmar</a></li>
+                    <li><a href="#">Vé máy bay đi New Zealand</a></li>
+                    <li><a href="#">Vé máy bay đi Italia</a></li>
+                    <li><a href="#">Vé máy bay đi Malaysia</a></li>
+                    <li><a href="#">Vé máy bay đi Tây Ban Nha</a></li>
+                    <li><a href="#">Vé máy bay đi Lào</a></li>
+                    <li><a href="#">Vé máy bay đi Indonesia</a></li>
+                    <li><a href="#">Vé máy bay đi quốc tế</a></li>
+                </ul>
 
-            <!--Vé máy bay nội địa-->
-            <ul class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                <li class="title">Vé máy bay Nội địa</li>
-                <li><a href="#">Vé máy bay đi Hà Nội</a></li>
-                <li><a href="#">Vé máy bay đi Sài Gòn</a></li>
-                <li><a href="#">Vé máy bay đi Đà Nẵng</a></li>
-                <li><a href="#">Vé máy bay đi Nha Trang</a></li>
-                <li><a href="#">Vé máy bay đi Đà Lạt</a></li>
-                <li><a href="#">Vé máy bay đi Phú Quốc</a></li>
-                <li><a href="#">Vé máy bay đi Vinh</a></li>
-                <li><a href="#">Vé máy bay đi Huế</a></li>
-                <li><a href="#">Vé máy bay đi Quy Nhơn</a></li>
-                <li><a href="#">Vé máy bay đi Hải Phòng</a></li>
-                <li><a href="#">Vé máy bay đi Buôn Mê Thuột</a></li>
-                <li><a href="#">Vé máy bay đi Thanh Hóa</a></li>
-                <li><a href="#">Vé máy bay đi Cần Thơ</a></li>
-                <li><a href="#">Vé máy bay đi Tam Kỳ - Chu Lai</a></li>
-                <li><a href="#">Vé máy bay đi Gia Lai</a></li>
-                <li><a href="#">Vé máy bay đi Côn Đảo</a></li>
-                <li><a href="#">Vé máy bay đi Tuy Hòa</a></li>
-                <li><a href="#">Vé máy bay đi Pleiku</a></li>
-                <li><a href="#">Vé máy bay đi Đồng Hới</a></li>
-                <li><a href="#">Vé máy bay đi Kiên Giang</a></li>
-                <li><a href="#">Vé máy bay đi Nghệ An</a></li>
-                <li><a href="#">Vé máy bay đi Cà Mau</a></li>
-                <li><a href="#">Vé máy bay đi Điện Biên</a></li>
-                <li><a href="#">Vé máy bay đi Khánh Hòa</a></li>
-                <li><a href="#">Vé máy bay đi Rạch Giá</a></li>
-            </ul>
+                <!--Vé máy bay nội địa-->
+                <ul class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <li class="title">Vé máy bay Nội địa</li>
+                    <li><a href="#">Vé máy bay đi Hà Nội</a></li>
+                    <li><a href="#">Vé máy bay đi Sài Gòn</a></li>
+                    <li><a href="#">Vé máy bay đi Đà Nẵng</a></li>
+                    <li><a href="#">Vé máy bay đi Nha Trang</a></li>
+                    <li><a href="#">Vé máy bay đi Đà Lạt</a></li>
+                    <li><a href="#">Vé máy bay đi Phú Quốc</a></li>
+                    <li><a href="#">Vé máy bay đi Vinh</a></li>
+                    <li><a href="#">Vé máy bay đi Huế</a></li>
+                    <li><a href="#">Vé máy bay đi Quy Nhơn</a></li>
+                    <li><a href="#">Vé máy bay đi Hải Phòng</a></li>
+                    <li><a href="#">Vé máy bay đi Buôn Mê Thuột</a></li>
+                    <li><a href="#">Vé máy bay đi Thanh Hóa</a></li>
+                    <li><a href="#">Vé máy bay đi Cần Thơ</a></li>
+                    <li><a href="#">Vé máy bay đi Tam Kỳ - Chu Lai</a></li>
+                    <li><a href="#">Vé máy bay đi Gia Lai</a></li>
+                    <li><a href="#">Vé máy bay đi Côn Đảo</a></li>
+                    <li><a href="#">Vé máy bay đi Tuy Hòa</a></li>
+                    <li><a href="#">Vé máy bay đi Pleiku</a></li>
+                    <li><a href="#">Vé máy bay đi Đồng Hới</a></li>
+                    <li><a href="#">Vé máy bay đi Kiên Giang</a></li>
+                    <li><a href="#">Vé máy bay đi Nghệ An</a></li>
+                    <li><a href="#">Vé máy bay đi Cà Mau</a></li>
+                    <li><a href="#">Vé máy bay đi Điện Biên</a></li>
+                    <li><a href="#">Vé máy bay đi Khánh Hòa</a></li>
+                    <li><a href="#">Vé máy bay đi Rạch Giá</a></li>
+                </ul>
 
-            <!--Vé máy bay the hãng-->
-            <ul class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                <li class="title">Vé máy bay theo hãng</li>
-                <li><a href="#">Vé máy bay Vietjet Air</a></li>
-                <li><a href="#">Vé máy bay Vietnamairline</a></li>
-                <li><a href="#">Vé máy bay Jeststar</a></li>
-                <li><a href="#">Vé máy bay Eva Airlines</a></li>
-                <li><a href="#">Vé máy bay Air Asia</a></li>
-                <li><a href="#">Vé máy bay Singapore Airlines</a></li>
-                <li><a href="#">Vé máy bay Asian Airlines</a></li>
-                <li><a href="#">Vé máy bay Tiger Airways</a></li>
-                <li><a href="#">Vé máy bay Thai Airways</a></li>
-                <li><a href="#">Vé máy bay theo hãng</a></li>
-            </ul>
+                <!--Vé máy bay the hãng-->
+                <ul class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <li class="title">Vé máy bay theo hãng</li>
+                    <li><a href="#">Vé máy bay Vietjet Air</a></li>
+                    <li><a href="#">Vé máy bay Vietnamairline</a></li>
+                    <li><a href="#">Vé máy bay Jeststar</a></li>
+                    <li><a href="#">Vé máy bay Eva Airlines</a></li>
+                    <li><a href="#">Vé máy bay Air Asia</a></li>
+                    <li><a href="#">Vé máy bay Singapore Airlines</a></li>
+                    <li><a href="#">Vé máy bay Asian Airlines</a></li>
+                    <li><a href="#">Vé máy bay Tiger Airways</a></li>
+                    <li><a href="#">Vé máy bay Thai Airways</a></li>
+                    <li><a href="#">Vé máy bay theo hãng</a></li>
+                </ul>
 
-            <!--Vé máy bay theo loại-->
-            <ul class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                <li class="title">Vé máy bay theo loại</li>
-                <li><a href="#">Vé máy bay Tết 2017</a></li>
-                <li><a href="#">Vé máy bay giá rẻ</a></li>
-                <li><a href="#">Vé máy bay đi du học</a></li>
-                <li><a href="#">Vé máy bay khuyến mãi</a></li>
-            </ul>
-        </div>*@
+                <!--Vé máy bay theo loại-->
+                <ul class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <li class="title">Vé máy bay theo loại</li>
+                    <li><a href="#">Vé máy bay Tết 2017</a></li>
+                    <li><a href="#">Vé máy bay giá rẻ</a></li>
+                    <li><a href="#">Vé máy bay đi du học</a></li>
+                    <li><a href="#">Vé máy bay khuyến mãi</a></li>
+                </ul>
+            </div>*@
 
         <!--Phần footer-->
         <footer class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -329,8 +356,8 @@
                             <p class="co-name col-xs-12 col-sm-12 col-md-12 col-lg-12">Phòng vé skyline</p>
                             <p class="detail col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                 Địa chỉ: Số 1 lô 22 Lê Hồng Phong, Hải Phòng <br />
-                                ĐT: 0981 20 0288 - 0906 02 8211 <br />
-                                Email: Ettravel.hp@gmail.com
+                                ĐT: 0313 611 158 – 0906 0282 11 <br />
+                                Email: phongveskyline@gmail.com
                             </p>
                         </div>
                     </div>
@@ -457,6 +484,19 @@
         })();
     </script>
 
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/5872595dd35229472a43d484/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
 
 </body>
 </html>
