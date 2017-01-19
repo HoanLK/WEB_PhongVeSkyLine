@@ -646,5 +646,23 @@
     "inputFiles": [
       "Content/Front/vequocte.css"
     ]
+  },
+  {
+    "outputFileName": "Scripts/admin/danhsachBankController.min.js",
+    "inputFiles": [
+      "Scripts/admin/danhsachBankController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/admin/themBankController.min.js",
+    "inputFiles": [
+      "Scripts/admin/themBankController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/front/bankController.min.js",
+    "inputFiles": [
+      "Scripts/front/bankController.js"
+    ]
   }
 ]

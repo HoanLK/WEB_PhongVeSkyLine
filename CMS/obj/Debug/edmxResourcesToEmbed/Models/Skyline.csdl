@@ -189,6 +189,7 @@
       <End Role="webpages_Roles" EntitySet="webpages_Roles" />
       <End Role="User" EntitySet="User" />
     </AssociationSet>
+    <EntitySet Name="Bank" EntityType="SkylineModel.Bank" />
   </EntityContainer>
   <EntityType Name="Video">
     <Key>
@@ -246,4 +247,17 @@
     <End Type="SkylineModel.webpages_Roles" Role="webpages_Roles" Multiplicity="*" />
     <End Type="SkylineModel.User" Role="User" Multiplicity="*" />
   </Association>
+  <EntityType Name="Bank">
+    <Key>
+      <PropertyRef Name="idBank" />
+    </Key>
+    <Property Name="idBank" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tenNganHang" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="kyHieu" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="tenTK" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="soTK" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="loaiTien" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="chiNhanh" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
 </Schema>

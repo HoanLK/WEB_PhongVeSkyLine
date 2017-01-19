@@ -545,9 +545,25 @@
             .trangchu > .buy-pay > .pay > .bank {
             }
 
-                .trangchu > .buy-pay > .pay > .bank > img {
-                    margin: 0 auto;
+                .trangchu > .buy-pay > .pay > .bank > .item {
+                    padding: 0.5em;
+                    background-color: transparent;
+                    border: none;
+                    -webkit-transition-duration: 0.5s; /*Webkit: Animation duration*/
+                    -moz-transition-duration: 0.5s; /*Mozilla duration version*/
+                    -o-transition-duration: 0.5s; /*Opera duration version*/
                 }
+
+                    .trangchu > .buy-pay > .pay > .bank > .item:hover {
+                        -webkit-transform: scale(1.2); /*Webkit: Scale up image to 1.2x original size*/
+                        -moz-transform: scale(1.2); /*Mozilla scale version*/
+                        -o-transform: scale(1.2); /*Opera scale version*/
+                    }
+
+                    .trangchu > .buy-pay > .pay > .bank > .item > img {
+                        height: 5em;
+                        border: solid 1px #5e5e5e;
+                    }
 
     /*Khách hàng nói về chúng tôi - Câu hỏi thường gặp*/
     .trangchu > .feedback-quest {
@@ -854,10 +870,16 @@
 
 /*Giao diện cho điện thoại*/
 @media (max-width: 767px) {
+
+    .IBEMobile .IBESearchButton {
+        margin: 0;
+        position: absolute;
+        bottom: 4%;
+    }
+
     /*Vé máy bay*/
     .trangchu > .datve-banner-khuyenmai > .datve {
         padding: 0;
-        height: 12em;
     }
 
         .trangchu > .datve-banner-khuyenmai > .datve > .tabs > .airfare {

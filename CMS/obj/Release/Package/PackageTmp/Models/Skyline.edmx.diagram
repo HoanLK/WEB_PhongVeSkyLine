@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="a73742a55cac4767898bcdacb04543fd" Name="Diagram1" ZoomLevel="78">
+      <Diagram DiagramId="a73742a55cac4767898bcdacb04543fd" Name="Diagram1" ZoomLevel="73">
         <EntityTypeShape EntityType="SkylineModel.Banner" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="SkylineModel.Category" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="SkylineModel.CategoryProduct" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
@@ -20,6 +20,7 @@
         <EntityTypeShape EntityType="SkylineModel.webpages_OAuthMembership" Width="1.5" PointX="5.375" PointY="9.75" />
         <EntityTypeShape EntityType="SkylineModel.webpages_Roles" Width="1.5" PointX="9.375" PointY="0.875" />
         <AssociationConnector Association="SkylineModel.webpages_UsersInRoles" />
+        <EntityTypeShape EntityType="SkylineModel.Bank" Width="1.5" PointX="9.375" PointY="7.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

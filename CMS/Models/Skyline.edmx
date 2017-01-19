@@ -5,6 +5,19 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
     <Schema Namespace="SkylineModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Bank">
+          <Key>
+            <PropertyRef Name="idBank" />
+          </Key>
+          <Property Name="idBank" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="tenNganHang" Type="nvarchar(max)" />
+          <Property Name="kyHieu" Type="nchar" MaxLength="10" />
+          <Property Name="image" Type="nvarchar(max)" />
+          <Property Name="tenTK" Type="nvarchar(max)" />
+          <Property Name="soTK" Type="nvarchar" MaxLength="50" />
+          <Property Name="loaiTien" Type="nchar" MaxLength="10" />
+          <Property Name="chiNhanh" Type="nvarchar(max)" />
+        </EntityType>
         <EntityType Name="Banner">
           <Key>
             <PropertyRef Name="id" />
@@ -248,6 +261,7 @@
           </ReferentialConstraint>
         </Association>
         <EntityContainer Name="SkylineModelStoreContainer">
+          <EntitySet Name="Bank" EntityType="Self.Bank" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Banner" EntityType="Self.Banner" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="CategoryProduct" EntityType="Self.CategoryProduct" Schema="dbo" store:Type="Tables" />
@@ -471,6 +485,7 @@
             <End Role="webpages_Roles" EntitySet="webpages_Roles" />
             <End Role="User" EntitySet="User" />
           </AssociationSet>
+          <EntitySet Name="Bank" EntityType="SkylineModel.Bank" />
         </EntityContainer>
         <EntityType Name="Video">
           <Key>
@@ -528,6 +543,19 @@
           <End Type="SkylineModel.webpages_Roles" Role="webpages_Roles" Multiplicity="*" />
           <End Type="SkylineModel.User" Role="User" Multiplicity="*" />
         </Association>
+        <EntityType Name="Bank">
+          <Key>
+            <PropertyRef Name="idBank" />
+          </Key>
+          <Property Name="idBank" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="tenNganHang" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="kyHieu" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="tenTK" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="soTK" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="loaiTien" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="chiNhanh" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -739,6 +767,20 @@
               <ScalarProperty Name="RoleId" ColumnName="RoleId" />
             </EndProperty>
           </AssociationSetMapping>
+          <EntitySetMapping Name="Bank">
+            <EntityTypeMapping TypeName="SkylineModel.Bank">
+              <MappingFragment StoreEntitySet="Bank">
+                <ScalarProperty Name="chiNhanh" ColumnName="chiNhanh" />
+                <ScalarProperty Name="loaiTien" ColumnName="loaiTien" />
+                <ScalarProperty Name="soTK" ColumnName="soTK" />
+                <ScalarProperty Name="tenTK" ColumnName="tenTK" />
+                <ScalarProperty Name="image" ColumnName="image" />
+                <ScalarProperty Name="kyHieu" ColumnName="kyHieu" />
+                <ScalarProperty Name="tenNganHang" ColumnName="tenNganHang" />
+                <ScalarProperty Name="idBank" ColumnName="idBank" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

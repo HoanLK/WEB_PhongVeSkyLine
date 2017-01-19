@@ -206,5 +206,19 @@
         <ScalarProperty Name="RoleId" ColumnName="RoleId" />
       </EndProperty>
     </AssociationSetMapping>
+    <EntitySetMapping Name="Bank">
+      <EntityTypeMapping TypeName="SkylineModel.Bank">
+        <MappingFragment StoreEntitySet="Bank">
+          <ScalarProperty Name="chiNhanh" ColumnName="chiNhanh" />
+          <ScalarProperty Name="loaiTien" ColumnName="loaiTien" />
+          <ScalarProperty Name="soTK" ColumnName="soTK" />
+          <ScalarProperty Name="tenTK" ColumnName="tenTK" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="kyHieu" ColumnName="kyHieu" />
+          <ScalarProperty Name="tenNganHang" ColumnName="tenNganHang" />
+          <ScalarProperty Name="idBank" ColumnName="idBank" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

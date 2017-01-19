@@ -197,6 +197,8 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\BankAPIController.cs" />
+    <Compile Include="Areas\Admin\Controllers\BanksController.cs" />
     <Compile Include="Areas\Admin\Controllers\BannerAPIController.cs" />
     <Compile Include="Areas\Admin\Controllers\BannersController.cs" />
     <Compile Include="Areas\Admin\Controllers\CategoriesAPIController.cs" />
@@ -254,6 +256,9 @@
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Bank.cs">
+      <DependentUpon>Skyline.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Banner.cs">
       <DependentUpon>Skyline.tt</DependentUpon>
@@ -2266,6 +2271,12 @@
     <Content Include="Content\Front\images\icon\plane-icon.png" />
     <Content Include="Content\Front\images\icon\search-flights.png" />
     <Content Include="Content\Front\images\logo.png" />
+    <Content Include="Content\Front\images\NganHang\Agribank-logo-big.png" />
+    <Content Include="Content\Front\images\NganHang\BIDV-logo-without-artboard.png" />
+    <Content Include="Content\Front\images\NganHang\HDbank-logo.jpg" />
+    <Content Include="Content\Front\images\NganHang\logo-vietcombank.jpg" />
+    <Content Include="Content\Front\images\NganHang\logo_MB.png" />
+    <Content Include="Content\Front\images\NganHang\techcombank1.jpg" />
     <Content Include="Content\Front\images\trangchu\airline-logo-1.gif" />
     <Content Include="Content\Front\images\trangchu\airline-logo-2.gif" />
     <Content Include="Content\Front\images\trangchu\bank.jpg" />
@@ -2341,6 +2352,10 @@
     <Content Include="Scripts\admin\categoryProductFactory.min.js">
       <DependentUpon>categoryProductFactory.js</DependentUpon>
     </Content>
+    <Content Include="Scripts\admin\danhsachBankController.js" />
+    <Content Include="Scripts\admin\danhsachBankController.min.js">
+      <DependentUpon>danhsachBankController.js</DependentUpon>
+    </Content>
     <Content Include="Scripts\admin\danhsachBannerController.min.js">
       <DependentUpon>danhsachBannerController.js</DependentUpon>
     </Content>
@@ -2379,6 +2394,10 @@
     </Content>
     <Content Include="Scripts\admin\postFactory.min.js">
       <DependentUpon>postFactory.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\admin\themBankController.js" />
+    <Content Include="Scripts\admin\themBankController.min.js">
+      <DependentUpon>themBankController.js</DependentUpon>
     </Content>
     <Content Include="Scripts\admin\themBannerController.min.js">
       <DependentUpon>themBannerController.js</DependentUpon>
@@ -2454,6 +2473,10 @@
     <Content Include="Areas\Admin\Views\web.config" />
     <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\Admin\Views\Dashboard\Index.cshtml" />
+    <Content Include="Scripts\front\bankController.js" />
+    <Content Include="Scripts\front\bankController.min.js">
+      <DependentUpon>bankController.js</DependentUpon>
+    </Content>
     <Content Include="Scripts\front\bannerController.js" />
     <Content Include="Scripts\front\bannerController.min.js">
       <DependentUpon>bannerController.js</DependentUpon>
@@ -2862,6 +2885,8 @@
     <Content Include="bower_components\angular\bower.json" />
     <Content Include="bower_components\angular\package.json" />
     <Content Include="bower_components\angular\README.md" />
+    <Content Include="Areas\Admin\Views\Banks\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Banks\Index.cshtml" />
     <None Include="bundleconfig.json" />
     <EntityDeploy Include="Models\Skyline.edmx">
       <Generator>EntityModelCodeGenerator</Generator>

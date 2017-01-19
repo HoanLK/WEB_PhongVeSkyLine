@@ -1,5 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="SkylineModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Bank">
+    <Key>
+      <PropertyRef Name="idBank" />
+    </Key>
+    <Property Name="idBank" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tenNganHang" Type="nvarchar(max)" />
+    <Property Name="kyHieu" Type="nchar" MaxLength="10" />
+    <Property Name="image" Type="nvarchar(max)" />
+    <Property Name="tenTK" Type="nvarchar(max)" />
+    <Property Name="soTK" Type="nvarchar" MaxLength="50" />
+    <Property Name="loaiTien" Type="nchar" MaxLength="10" />
+    <Property Name="chiNhanh" Type="nvarchar(max)" />
+  </EntityType>
   <EntityType Name="Banner">
     <Key>
       <PropertyRef Name="id" />
@@ -243,6 +256,7 @@
     </ReferentialConstraint>
   </Association>
   <EntityContainer Name="SkylineModelStoreContainer">
+    <EntitySet Name="Bank" EntityType="Self.Bank" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Banner" EntityType="Self.Banner" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="CategoryProduct" EntityType="Self.CategoryProduct" Schema="dbo" store:Type="Tables" />

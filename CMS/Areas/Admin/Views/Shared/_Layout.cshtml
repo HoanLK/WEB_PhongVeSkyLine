@@ -198,6 +198,13 @@
                             <span class="title">Khách liên hệ</span>
                         </a>
                     </li>
+                    <!--Ngân hàng-->
+                    <li>
+                        <a href="@Url.Action("Index", "Banks", new { Area = "Admin" })">
+                            <div class="gui-icon"><i class="fa fa-bank"></i></div>
+                            <span class="title">Ngân hàng</span>
+                        </a>
+                    </li>
                     <!--Video-->
                     @*<li>
                             <a href="@Url.Action("Index", "Videos", new { Area = "Admin" })">
@@ -349,9 +356,9 @@
     <!--Contact-->
     <script src="~/Scripts/admin/danhsachContactController.min.js"></script>
     <script src="~/Scripts/admin/themContactController.min.js"></script>
-    <!--Image-->
-    <script src="~/Scripts/admin/themImageController.min.js"></script>
-    <script src="~/Scripts/admin/danhsachImageController.min.js"></script>
+    <!--Ngân hàng-->
+    <script src="~/Scripts/admin/danhsachBankController.min.js"></script>
+    <script src="~/Scripts/admin/themBankController.min.js"></script>
 </body>
 
 </html>

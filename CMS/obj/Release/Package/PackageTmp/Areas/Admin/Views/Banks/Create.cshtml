@@ -1,0 +1,78 @@
+﻿
+@{
+    ViewBag.Title = "Thêm ngân hàng";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div ng-app="myApp">
+    <div ng-controller="themBankController">
+        <input type="hidden" value="@WebSecurity.CurrentUserName" id="user" />
+        <div class="row">
+            <div class="col-md-2">
+                <button type="button" class="btn btn-block btn-sm ink-reaction btn-success" ng-click="saveBank()"><span class="fa fa-edit"></span> Lưu</button>
+            </div>
+            <div class="col-md-2">
+                <button type="button" class="btn btn-block btn-sm ink-reaction btn-info" ng-click="saveBankAndExit()"><span class="fa fa-check-square-o"></span> Lưu & Thoát</button>
+            </div>
+            <div class="col-md-2">
+                <button type="button" class="btn btn-block btn-sm ink-reaction btn-info" ng-click="saveBankAndNew()"><span class="fa fa-plus"></span> Lưu & Thêm mới</button>
+            </div>
+            <div class="col-md-2">
+                <button type="button" class="btn btn-block btn-sm ink-reaction btn-danger" ng-click="cancel()"><span class="fa fa-remove"></span> Hủy bỏ</button>
+            </div>
+        </div>
+        <hr class="ruler-lg" />
+
+        <div class="card">
+            <div class="card-body">
+
+                <div class="row">
+                    <div class="card-head">
+                        <ul class="nav nav-tabs" data-toggle="tabs">
+                            <li class="active"><a href="#noidung">Ngân hàng</a></li>
+                        </ul>
+                    </div>
+                    <div class="card-body tab-content">
+                        <div class="tab-pane active" id="noidung">
+                            <div class="col-md-9">
+                                <div class="form-group  " ng-class="{'has-error':!bank.tenNganHang, 'has-success':bank.tenNganHang}">
+                                    <label for="tenNganHang">Tên ngân hàng *</label>
+                                    <input type="text" class="form-control" id="tenNganHang" name="tenNganHang" ng-model="bank.tenNganHang">
+                                </div>
+                                <div class="form-group  " ng-class="{'has-error':!bank.kyHieu, 'has-success':bank.kyHieu}">
+                                    <label for="kyHieu">Ký hiệu *</label>
+                                    <input type="text" class="form-control" id="kyHieu" name="kyHieu" ng-model="bank.kyHieu">
+                                </div>
+                                <div class="form-group  " ng-class="{'has-error':!bank.tenTK, 'has-success':bank.tenTK}">
+                                    <label for="tenTK">Tên tài khoản *</label>
+                                    <input type="text" class="form-control" id="tenTK" name="tenTK" ng-model="bank.tenTK">
+                                </div>
+                                <div class="form-group  " ng-class="{'has-error':!bank.soTK, 'has-success':bank.soTK}">
+                                    <label for="soTK">Số tài khoản *</label>
+                                    <input type="text" class="form-control" id="soTK" name="soTK" ng-model="bank.soTK">
+                                </div>
+                                <div class="form-group  " ng-class="{'has-error':!bank.loaiTien, 'has-success':bank.loaiTien}">
+                                    <label for="loaiTien">Loại tiền *</label>
+                                    <input type="text" class="form-control" id="loaiTien" name="loaiTien" ng-model="bank.loaiTien">
+                                </div>
+                                <div class="form-group  " ng-class="{'has-error':!bank.chiNhanh, 'has-success':bank.chiNhanh}">
+                                    <label for="chiNhanh">Chi nhánh *</label>
+                                    <input type="text" class="form-control" id="chiNhanh" name="chiNhanh" ng-model="bank.chiNhanh">
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="image">Hình ảnh (408 x266)</label>
+                                    <input type="text" name="image" id="image" ng-model="bank.image" class="form-control" /> <button class="btn btn-primary" ng-click="chooseImage()">Chọn ảnh</button>
+                                    <img class="img-responsive" ng-src="{{bank.image}}" ng-show="bank.image" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
