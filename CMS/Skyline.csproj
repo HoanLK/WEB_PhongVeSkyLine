@@ -2262,6 +2262,7 @@
     <Content Include="Content\Front\images\anhbaiviet\quocte.png" />
     <Content Include="Content\Front\images\arrow-click-2.gif" />
     <Content Include="Content\Front\images\arrow-click.gif" />
+    <Content Include="Content\Front\images\callcenter.png" />
     <Content Include="Content\Front\images\chat\messenger.png" />
     <Content Include="Content\Front\images\chat\skype.png" />
     <Content Include="Content\Front\images\chat\viber.png" />
@@ -2270,6 +2271,7 @@
     <Content Include="Content\Front\images\footer-bg.png" />
     <Content Include="Content\Front\images\icon\plane-icon.png" />
     <Content Include="Content\Front\images\icon\search-flights.png" />
+    <Content Include="Content\Front\images\icon_support2.png" />
     <Content Include="Content\Front\images\logo.png" />
     <Content Include="Content\Front\images\NganHang\Agribank-logo-big.png" />
     <Content Include="Content\Front\images\NganHang\BIDV-logo-without-artboard.png" />
