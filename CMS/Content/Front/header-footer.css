@@ -85,6 +85,7 @@ body {
                         .ads-menu > header > .desktop > .logo-hotline > .hotline > .thongTin >p> .sdt {
                             display: inline-block;
                             color:#f44336;
+                            font-size:1.4em;
                         }
 
                             .ads-menu > header > .desktop > .logo-hotline > .hotline > .thongTin >p> .sdt:hover {
